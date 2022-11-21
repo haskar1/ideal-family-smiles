@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/loading-button.css">
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -144,7 +145,15 @@
                      <p>
                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium vero magnam tempora!
                      </p>
-                     <a class="button-solid" href="./contact.html">Get Free Quote</a>
+                     <a class="button-solid" href="./contact.html">
+                         Get Free Quote
+                        <div class="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
                 </div>
                 <picture class="image-box">
                      <source media="(max-width: 600px)" srcset="./images/cabinets2-m.jpg">
@@ -164,7 +173,15 @@
                 <p>
                     Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
                 </p>
-                <a href="./contact.html" class="button-solid">Free Estimate</a>
+                <a href="./contact.html" class="button-solid">
+                    Free Estimate
+                    <div class="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </a>
             </div>
             <picture>
                 <source media="(max-width: 600px)" srcset="./images/cabinets2-m.webp">
@@ -223,6 +240,8 @@
 
     <script defer src="./nav.js"></script>
     <script defer src="./dark.js"></script>
+    <script defer src="./loading-button.js"></script>
+
     <!--
         This script adds a class to the body after scrolling 100px
         and we used these body.scroll styles to create some on scroll 

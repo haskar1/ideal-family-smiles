@@ -1,6 +1,1 @@
 remove dark mode
-
-add loading circle to buttons
-
-remove padding transition from form inputs
-  indent cursor. Or, change orange line animation

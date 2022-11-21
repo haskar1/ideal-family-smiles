@@ -63,9 +63,9 @@
   #form #contact .input-group textarea {
     font-size: 1em;
     height: 4.1875em;
-    border: none;
-    border-bottom: 0.0625em solid #d4d4d4;
+    border: 0.0625em solid #d4d4d4;
     background: transparent;
+    padding-left: 1.25em;
   }
   #form #contact .input-group input:focus {
     border: 0.0625em solid var(--primary);
@@ -177,46 +177,20 @@
   #form #contact .input-group:last-of-type {
     width: 100%;
   }
-  #form #contact .input-group:hover .hover-box {
-    height: 4.1875em;
-    border: 0.0625em solid var(--primary);
-    pointer-events: none;
-  }
-  #form #contact .input-group:hover input[type="text"],
-  #form #contact .input-group:hover input[type="email"],
-  #form #contact .input-group:hover input[type="tel"],
-  #form #contact .input-group:hover input[type="url"],
-  #form #contact .input-group:hover textarea {
-    padding-left: 1.25em;
+  #form #contact .input-group input[type="text"]:hover,
+  #form #contact .input-group input[type="email"]:hover,
+  #form #contact .input-group input[type="tel"]:hover,
+  #form #contact .input-group input[type="url"]:hover,
+  #form #contact .input-group textarea:hover {
+    background-color: #9393930c;
   }
   #form #contact .input-group input[type="text"],
   #form #contact .input-group input[type="email"],
   #form #contact .input-group input[type="tel"],
   #form #contact .input-group input[type="url"],
   #form #contact .input-group textarea {
-    border-bottom: none;
     position: relative;
-    -webkit-transition: padding .3s;
-    transition: padding .3s;
     background: transparent;
-  }
-  #form #contact .input-group .hover-box {
-    position: absolute;
-    display: block;
-    height: 0.0625em;
-    width: 100%;
-    background: transparent;
-    border: 0.0625em solid #e9e8e8;
-    opacity: 1;
-    bottom: -0.0625em;
-    left: 0;
-    z-index: 10;
-    -webkit-transition: height .3s, border .3s;
-    transition: height .3s, border .3s;
-    z-index: -1;
-  }
-  #form #contact .textarea:hover .hover-box {
-    height: 10.5em;
   }
   #form #contact .form-submit {
     margin-left: auto;
