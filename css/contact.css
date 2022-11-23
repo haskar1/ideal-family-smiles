@@ -7,7 +7,7 @@
     padding: 3.125em 0;
     margin: auto;
     position: relative;
-    padding-bottom: 36%;
+    padding-bottom: 10%;
   }
   #form .top-wave {
     position: absolute;
@@ -32,10 +32,10 @@
     margin-bottom: 2.66666667em;
   }
   #form .left-section {
-    width: 96%;
+    width: 90%;
     margin: auto;
     margin-top: 15%;
-    max-width: 37.5em;
+    max-width: 25em;
   }
   #form #contact {
     margin: auto;
@@ -99,7 +99,7 @@
     width: 100%;
     max-width: 18.75em;
     margin: auto;
-    border-radius: 0.3125em;
+    border-radius: 1em;
   }
   #form .contact-right .heading {
     color: #fff;
@@ -127,12 +127,9 @@
   }
 }
 /* Mobile Landscape */
-@media only screen and (min-width: 568px) {
-  #form #contact {
-    max-width: 43.75em;
-  }
+@media only screen and (min-width: 630px) {
   #form .contact-right {
-    max-width: 43.75em;
+    max-width: 35.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -151,7 +148,7 @@
   }
 }
 /* Tablet */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 43em) {
   #form #contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -165,6 +162,9 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #form .left-section {
+    max-width: 37.5em;
   }
   #form #contact .input-group {
     width: 48%;

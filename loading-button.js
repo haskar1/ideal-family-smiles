@@ -2,17 +2,41 @@ const buttons = document.querySelectorAll('.button-solid');
 
 [...buttons].forEach(button => {
   button.addEventListener('click', (e) => {
-    const loader = e.target.querySelector('.lds-ring');
-    const loaderDivChildren = e.target.querySelectorAll('.lds-ring div');
+    
+    // Contact form submit button
+    if (button.id === 'contact-submit') {  
+      if (!checkFormIsValid()) {
+        return
+      }
+    };
 
-    loader.classList.add('active');
-    [...loaderDivChildren].forEach(child => child.classList.add('active'));
+    toggleLoadingCircle(e);
+  
+    setTimeout(toggleLoadingCircle, 90000, e);
+  })
+});
 
-    setTimeout(stopLoadingCircle, 90000);
 
-    function stopLoadingCircle() {
-      loader.classList.remove('active');
-      [...loaderDivChildren].forEach(child => child.classList.remove('active'));
+function checkFormIsValid() {
+  const formInputs = document.querySelectorAll('#contact .input-group input, #contact .input-group textarea');
+  let formValid = true;
+
+  [...formInputs].forEach(formInput => {
+    if (!formInput.checkValidity()) {
+      formValid = false;
+      return;
     }
   })
-})
+
+  return formValid;
+}
+
+
+function toggleLoadingCircle(e) {
+  const loader = e.target.querySelector('.lds-ring');
+  const loaderDivChildren = e.target.querySelectorAll('.lds-ring div');
+
+  loader.classList.toggle('active');
+  [...loaderDivChildren].forEach(child => child.classList.toggle('active'));
+}
+

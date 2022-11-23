@@ -97,19 +97,20 @@
     height: 3.57142857em;
     text-align: center;
     padding: 0 2.14285714em;
+    border-radius: 6px;
     position: relative;
     z-index: 1;
     background-color: var(--primary);
     color: #000;
-    -webkit-transition: color .3s;
-    transition: color .3s;
-    -webkit-transition-delay: .1s;
-            transition-delay: .1s;
+    -webkit-transition: color .2s, outline .2s;
+    transition: color .2s, outline .2s;
   }
-  .button-solid:hover {
+  .button-solid:hover,
+  .button-solid:focus {
     color: rgb(98, 97, 97);
+    outline: rgb(98, 97, 97) solid 3px;
   }
-  .button-solid:hover:before {
+  /* .button-solid:hover:before {
     width: 5%;
   }
   .button-solid:before {
@@ -125,7 +126,7 @@
     width: 0;
     -webkit-transition: width .3s;
     transition: width .3s;
-  }
+  } */
   .skip {
     position: absolute;
     top: 0;
