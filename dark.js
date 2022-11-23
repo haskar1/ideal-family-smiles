@@ -1,10 +1,10 @@
-
+/* 
 
 //
 //    The Dark Mode System
 //
 
-/* Body and Toggle */
+// Body and Toggle
 var body = document.querySelector("body");
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
@@ -39,4 +39,4 @@ darkModeToggle.addEventListener('click', () => {
     // if dark mode is enabled, run this function to set it to disabled
     disableDarkMode();
   }
-})
+}) */
