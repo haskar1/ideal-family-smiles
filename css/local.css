@@ -16,6 +16,7 @@
     order: 2;
     margin: auto;
     margin-top: 4.6875em;
+    width: 90%;
     max-width: 38.1875em;
   }
   #sidebyside .content h2 {
@@ -129,6 +130,7 @@
     order: 2;
     margin: auto;
     margin-top: 4.6875em;
+    width: 90%;
     max-width: 38.1875em;
   }
   #sidebyside-reverse .content h2 {

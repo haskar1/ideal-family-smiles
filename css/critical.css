@@ -190,7 +190,7 @@
   .services .card p {
     text-align: center;
     line-height: 1.33333333em;
-    width: 100%;
+    width: 90%;
     opacity: .7;
   }
 }
@@ -207,7 +207,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 98%;
+    width: 95%;
   }
   .services .card {
     margin: 0;
