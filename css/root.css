@@ -110,23 +110,6 @@
     color: rgb(98, 97, 97);
     outline: rgb(98, 97, 97) solid 3px;
   }
-  /* .button-solid:hover:before {
-    width: 5%;
-  }
-  .button-solid:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: #f7d377;
-    width: 0;
-    -webkit-transition: width .3s;
-    transition: width .3s;
-  } */
   .skip {
     position: absolute;
     top: 0;
@@ -837,6 +820,7 @@
     max-width: 48.0625em;
     margin: 0;
     max-width: initial;
+    font-size: 1.25em;
   }
   #footer .right-section .lists ul:nth-of-type(3) {
     margin-top: 0;

@@ -1,3 +1,6 @@
 remove dark mode
 
 change button loading circle to be async?
+
+change content width on each page's css file to 90%
+
