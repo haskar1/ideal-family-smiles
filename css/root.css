@@ -713,6 +713,7 @@
     line-height: 1.16666667;
     -webkit-transition: color .3s;
     transition: color .3s;
+    font-size: 1em;
   }
   #footer .right-section .lists ul li a:hover {
     color: var(--primary);
