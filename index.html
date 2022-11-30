@@ -131,7 +131,7 @@
         <section id="mission">
             <div class="container">
                 <div class="content">
-                    <h2 class="title">Creating Healthy Smiles in Richmond, VA</h2>
+                    <h2 class="title">Creating Healthy Smiles in Fairfax, VA</h2>
                     <p>
                         At Ideal Smile Dentistry, we give you a smile you can be proud of! Our friendly dentists and team love helping take smiles to the next level, and we will work one-on-one with you to design your treatment plan. Call us today to schedule an appointment and learn more about dental care in Richmond, VA
                     </p>
@@ -200,7 +200,17 @@
                 </p>
             </div>
             <div class="card">
-                <h2><a href="./projects.html">View All<br> Services</a></h2>
+                <h2>
+                    <a class="button-solid" href="./projects.html">
+                        View All Services
+                        <div class="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
+                </h2>
             </div>
         </section>
 
@@ -405,10 +415,11 @@
     <script defer>
         document.addEventListener('scroll', (e) => { 
             const scroll = document.documentElement.scrollTop;
-            if(scroll >= 100){
-        document.querySelector('body').classList.add('scroll')
+            
+            if (scroll >= 100) {
+                document.querySelector('body').classList.add('scroll')
             } else {
-            document.querySelector('body').classList.remove('scroll')
+                document.querySelector('body').classList.remove('scroll')
             }
         });
     </script>

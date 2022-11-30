@@ -114,7 +114,7 @@
     position: relative;
   }
 }
-/* Small Desktop */
+/* Large Desktop */
 @media only screen and (min-width: 1300px) {
   #hero {
     padding: 17.0625em 0;
@@ -183,14 +183,8 @@
   }
   .services .card:last-of-type {
     margin: auto;
-    max-width: 15em;
-  }
-  .services .card:last-of-type h2{
-    margin: 0;
-  }
-  .services .card:last-of-type a {
-    text-decoration: none;
-    padding: .75em 0;
+    max-width: 20em;
+    font-size: min(8vw, 0.875em);
   }
   .services .card picture {
     background: var(--primary);
@@ -221,6 +215,10 @@
     color: #1a1a1a;
     margin-bottom: 0.65em;
   }
+  .services .card:last-of-type h2{
+    margin: 0;
+    font-size: 1.5em;
+  }
   .services .card p {
     text-align: center;
     line-height: 1.33333333em;
@@ -229,25 +227,34 @@
     margin: auto;
   }
 }
-/* Inbetween */
-@media only screen and (min-width: 900px) {
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
   .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
   .services .card {
     margin: 0 1.5em 4em;
+    max-width: none;
+  }
+  .services .card:first-of-type {
+    margin: 0 1.5em 4em;
+  }
+  .services .card:last-of-type {
+    grid-column-end: span 3;
+    max-width: none;
+    margin-top: 2em;
   }
 }
 /* Large Desktop */
-@media only screen and (min-width: 1300px) {
+/* @media only screen and (min-width: 1300px) {
   .services {
-    padding: 3.125em 5em;
+    
   }
   .services .card {
-    max-width: 22.3125em;
+    
   }
-}
+} */
 /* Dark mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #services {

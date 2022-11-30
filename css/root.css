@@ -119,7 +119,7 @@
   }
 }
 /* Reset Margins */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   body,
   html {
     padding: 0;
@@ -137,7 +137,7 @@
 <---         Navigation         -->
 <--- -------------------------- -*/
 /* Mobile - Top Drop Down */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   #navigation {
     position: fixed;
     top: 0;
@@ -321,7 +321,7 @@
   }
 }
 /* Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1025px) {
   ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0.375em rgba(0, 0, 0, 0.3);
     background-color: #fff;
@@ -472,7 +472,7 @@
   }
 }
 /* Dark Mode Mobile */
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
   body.dark-mode #navigation .background-color-div {
     background-color: var(--dark);
   }
@@ -504,9 +504,9 @@
   body.dark-mode #navigation #navbar-menu ul li a.active {
     color: var(--primary);
   }
-}
+} */
 /* Dark Mode Desktop */
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   body.dark-mode #navigation .background-color-div {
     background-color: var(--dark);
   }
@@ -525,7 +525,7 @@
   body.dark-mode #navigation #navbar-menu ul li a.active {
     color: var(--primary);
   }
-}
+} */
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
