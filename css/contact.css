@@ -184,6 +184,13 @@
   #form #contact .input-group textarea:hover {
     background-color: #9393930c;
   }
+    #form #contact .input-group input[type="text"]:focus,
+    #form #contact .input-group input[type="email"]:focus,
+    #form #contact .input-group input[type="tel"]:focus,
+    #form #contact .input-group input[type="url"]:focus,
+    #form #contact .input-group textarea:focus {
+      background-color: #9393930c;
+    }
   #form #contact .input-group input[type="text"],
   #form #contact .input-group input[type="email"],
   #form #contact .input-group input[type="tel"],

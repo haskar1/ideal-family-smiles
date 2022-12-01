@@ -96,6 +96,21 @@
     display: inline-block;
     width: auto;
   }
+  #mission .content {
+    max-width: 60em;
+    margin: auto;
+    text-align: center;
+    padding: 3.125em 1.25em;
+    margin-bottom: 3.125em;
+  }
+  #mission .content h2 {
+    margin-bottom: 1em;
+    font-size: min(10vw, 2.5em);
+    font-weight: 400;
+  }
+  #mission .content p {
+    font-size: 1.5em;
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
@@ -133,20 +148,10 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #mission .content {
-    max-width: 60em;
-    margin: auto;
+  .services-title.container {
     text-align: center;
-    padding: 3.125em 1.25em;
-    margin-bottom: 3.125em;
-  }
-  #mission .content h2 {
     margin-bottom: 1em;
-    font-size: min(10vw, 3em);
-    font-weight: 400;
-  }
-  #mission .content p {
-    font-size: 1.5em;
+    font-size: 3em;
   }
   .services {
     display: -webkit-box;
@@ -186,7 +191,7 @@
   }
   .services .card {
     flex: 1 0 100%;
-    max-width: 20em;
+    max-width: 25em;
     margin: .5em;
   }
   .services .card:first-of-type {
@@ -194,7 +199,7 @@
   }
   .services .card:last-of-type {
     margin: auto;
-    max-width: 20em;
+    max-width: 40em;
     font-size: min(8vw, 0.875em);
   }
   .services .card picture {

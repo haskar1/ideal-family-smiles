@@ -448,7 +448,8 @@
     -webkit-transition: width .3s;
     transition: width .3s;
   }
-  #navigation #navbar-menu ul li a:hover:before {
+  #navigation #navbar-menu ul li a:hover:before, 
+  #navigation #navbar-menu ul li a:focus:before {
     width: 100%;
   }
   #navigation #navbar-menu ul li a.active:before {
@@ -715,7 +716,8 @@
     transition: color .3s;
     font-size: 1em;
   }
-  #footer .right-section .lists ul li a:hover {
+  #footer .right-section .lists ul li a:hover, 
+  #footer .right-section .lists ul li a:focus {
     color: var(--primary);
   }
   #footer .right-section .lists ul h2 {
@@ -766,7 +768,8 @@
     text-decoration: none;
     font-size: 1em;
   }
-  #footer .credit a:hover {
+  #footer .credit a:hover, 
+  #footer .credit a:focus {
     text-decoration: underline;
   }
   #footer .credit .copyright {
@@ -845,7 +848,8 @@
     -webkit-transition: width .3s;
     transition: width .3s;
   }
-  #footer .right-section .lists ul li a:hover:before {
+  #footer .right-section .lists ul li a:hover:before, 
+  #footer .right-section .lists ul li a:focus:before {
     width: 100%;
   }
   #footer .right-section .buttons {
