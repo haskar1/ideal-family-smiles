@@ -2,3 +2,5 @@ remove dark mode
 
 change button loading circle to be async?
 
+add fade to right side of services view on homepage
+to imply there are more items
