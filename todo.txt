@@ -2,3 +2,7 @@ remove dark mode
 
 change button loading circle to be async?
 
+change images on services section of home page
+
+make button font sizes consistent
+
