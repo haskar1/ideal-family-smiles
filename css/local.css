@@ -5,6 +5,7 @@
 @media only screen and (min-width: 0em) {
   #sidebyside {
     padding: 50px 0;
+    margin-bottom: 4em;
   }
   #sidebyside .container {
     display: flex;
@@ -97,7 +98,6 @@
     padding: 6.25em 0;
   }
 }
-/* Small Desktop */
 @media only screen and (min-width: 900px) {
   #sidebyside {
     padding: 9.375em 0;
@@ -216,7 +216,7 @@
     padding: 6.25em 0;
   }
 }
-/* Small Desktop */
+/* Large Desktop */
 @media only screen and (min-width: 1300px) {
   #sidebyside-reverse {
     padding: 9.375em 0;
@@ -246,6 +246,93 @@
     left: -6.8125em;
   }
 }
+/*-- -------------------------- -->
+<---          Office            -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #office {
+    margin-bottom: 5em;
+  }
+  #office .container {
+    text-align: center;
+    width: 90%;
+    padding: 4em 0;
+    background: #f6f6fc;
+    -webkit-box-shadow: 0px -7px 11px -1px rgba(0,0,0,0.2); 
+    box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  #office .office-info {
+    width: 90%;
+    margin: auto;
+  }
+  #office .title {
+    font-size: min(15vw, 3em);
+    margin-bottom: 1.5em;
+  }
+  #office .office-info h2 {
+    font-size: min(8vw, 2em);
+    font-weight: 400;
+    margin-bottom: 0.75em;
+  }
+  #office .office-info a {
+    display: block;
+    width: max-content;
+    font-size: min(8vw, 2em);
+    margin: auto;
+    margin-bottom: 0.75em;
+    padding: 0.15em 0.5em;
+    text-decoration: none;
+  }
+  #office .office-info a.office-address:hover, 
+  #office .office-info a.office-address:focus {
+    text-decoration: underline;
+  }
+  #office .office-info iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 6em;
+    width: 100%;
+    max-width: 400px;
+  }
+  #office .button-solid {
+    display: inline-block;
+    font-size: 1em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #office .container {
+    padding: 7em 0;
+  }
+  #office .title {
+    margin-bottom: 2em;
+  }
+  #office .office-info {
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: center;
+    gap: 4em;
+  }
+  #office .office-info--address {
+    padding: 0 2.25em;
+    margin-top: 1em;
+  }
+  #office .office-info a, 
+  #office .office-info h2 {
+    font-size: 2.25em;
+  }
+  #office .office-info iframe {
+    width: 400px;
+  }
+  #office .button-solid {
+    font-size: 1.25em;
+  }
+}
+
+
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/

@@ -151,7 +151,7 @@
   .services-title.container {
     text-align: center;
     margin-bottom: 1em;
-    font-size: 3em;
+    font-size: min(15vw, 3em);
   }
   .services {
     display: -webkit-box;
