@@ -95,6 +95,7 @@
     margin: auto;
     display: inline-block;
     width: auto;
+    font-size: 1.2em;
   }
   #mission .content {
     max-width: 60em;
@@ -262,15 +263,6 @@
     margin-top: 2em;
   }
 }
-/* Large Desktop */
-/* @media only screen and (min-width: 1300px) {
-  .services {
-    
-  }
-  .services .card {
-    
-  }
-} */
 /* Dark mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #services {
