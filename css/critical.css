@@ -154,7 +154,7 @@
     margin-bottom: 1em;
     font-size: min(15vw, 3em);
   }
-  .services {
+  /* .services {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -180,7 +180,7 @@
     margin-bottom: 3.125em;
 
 
-    /* Horizontal fade effect when scrolling to let people know there's more content */
+    /* Horizontal fade effect when scrolling to let people know there's more content
     
     background-image: linear-gradient(to right, white, white),
                       linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
@@ -189,14 +189,11 @@
     background-color: white;
     background-size: 30px 100%, 30px 100%;
     background-attachment: local, scroll;
-  }
+  } */
   .services .card {
-    flex: 1 0 100%;
     max-width: 25em;
-    margin: .5em;
-  }
-  .services .card:first-of-type {
-    margin-left: 0;
+    margin: 4em auto;
+    text-align: center;
   }
   .services .card:last-of-type {
     margin: auto;
@@ -232,10 +229,6 @@
     color: #1a1a1a;
     margin-bottom: 0.65em;
   }
-  .services .card:last-of-type h2{
-    margin: 0;
-    font-size: 1.5em;
-  }
   .services .card p {
     text-align: center;
     line-height: 1.33333333em;
@@ -243,24 +236,54 @@
     opacity: .7;
     margin: auto;
   }
+  .services .view-more-btn .button-solid {
+    font-size: 1.2em;
+  }
+  .services .view-all-btn .button-solid {
+    font-size: 1.3em;
+  }
+  .services .expanded-service {
+    display: none;
+  }
+  .services .expanded-service[clicked] {
+    display: block;
+  }
+  .services .view-more-btn[clicked]  {
+    display: none;
+  }
+}
+/* In-between */
+@media only screen and (min-width: 51em) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services .card {
+    margin: 2em auto;
+  }
+  .services .view-more-btn {
+    display: none;
+  }
+  .services .expanded-service {
+    display: block;
+  }
+  .services .card:last-of-type {
+    grid-column-end: span 2;
+    max-width: none;
+    margin-top: 2em;
+  }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   .services {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
   .services .card {
     margin: 0 1.5em 4em;
     max-width: none;
   }
-  .services .card:first-of-type {
-    margin: 0 1.5em 4em;
-  }
   .services .card:last-of-type {
     grid-column-end: span 3;
-    max-width: none;
-    margin-top: 2em;
   }
 }
 /* Dark mode */

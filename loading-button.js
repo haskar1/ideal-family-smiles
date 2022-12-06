@@ -36,7 +36,21 @@ function toggleLoadingCircle(e) {
   const loader = e.target.querySelector('.lds-ring');
   const loaderDivChildren = e.target.querySelectorAll('.lds-ring div');
 
-  loader.classList.toggle('active');
-  [...loaderDivChildren].forEach(child => child.classList.toggle('active'));
+  if (loader) {
+    loader.classList.toggle('active');
+    [...loaderDivChildren].forEach(child => child.classList.toggle('active'));
+  }
 }
 
+
+// "View More" button to expand services list on mobile view
+
+const viewMoreBtn = document.querySelector('#services .view-more-btn .button-solid');
+const expandedServices = document.querySelectorAll('#services .expanded-service');
+
+if (viewMoreBtn) {
+  viewMoreBtn.addEventListener('click', () => {
+    viewMoreBtn.parentElement.toggleAttribute('clicked');
+    [...expandedServices].forEach(service => service.toggleAttribute('clicked'));
+  })  
+}
