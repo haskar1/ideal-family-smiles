@@ -32,20 +32,6 @@
     padding-left: min(5vw, 1.5em);
     margin-bottom: 2em;
   }
-  #sidebyside .content ul {
-    padding-left: 1.25em;
-    margin-bottom: 1.25em;
-  }
-  #sidebyside .content ul li {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  #sidebyside .content ul li img {
-    margin-right: 0.625em;
-    margin-top: 0.22222222em;
-  }
   #sidebyside .content .button-solid {
     font-size: 1.20em;
   }
