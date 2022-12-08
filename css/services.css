@@ -1,103 +1,112 @@
+
+
 /*-- -------------------------- -->
-<---         Portfolio          -->
+<---         Services           -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #portfolio {
-    padding-top: 3.125em;
-    padding-bottom: 35%;
+  #services ul.services--dropdown-list {
+    width : 100%;
+    max-width: 80em;
+    background: white;
+    margin : 40px auto;
+    list-style-type: none;
+  }
+
+  #services li {
+    background-color: white;
+    margin-bottom: 2em;
+  }
+
+  #services label {
     position: relative;
-    z-index: 5;
   }
-  #portfolio .container {
-    width: 96%;
-    max-width: 82.625em;
-    padding: 0;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 1.875em;
-    font-size: min(1.3vw, 1em);
-  }
-  #portfolio .container .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    gap: 1.875em;
-  }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(1) {
-    width: 26.25em;
-    height: 35.4375em;
-  }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(2) {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(3) {
-    width: 26.25em;
-    height: 32em;
-  }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(1) {
-    width: 26.25em;
-    height: 30.75em;
-  }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(2) {
-    width: 26.25em;
-    height: 32.3125em;
-  }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(3) {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(1) {
-    width: 26.25em;
-    height: 39.0625em;
-  }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(2) {
-    width: 26.25em;
-    height: 28.25em;
-  }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(3) {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #portfolio .container .row picture {
-    position: relative;
+
+  #services span {
     display: block;
+    cursor : pointer;
+    padding : 30px;
+    background : linear-gradient(#62C6F2, #00539B); 
+    color : white;
+    font-size : min(5vw, 1.3em);
+    white-space: nowrap;
+    border-radius: 6px;
   }
-  #portfolio .container .row picture img {
+  
+  #services span::after {
+    content: "+";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    margin-left: 1em;
+  }
+  
+  #services input[type="checkbox"] {
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+  }  
+  
+  #services .slide {
+    clear: both;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 0.5em;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+  }
+  
+  #services input[type="checkbox"]:checked + .slide {
+    height: 300px;
   }
 }
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #portfolio {
-    padding: 9.375em 0;
+/* In between */
+@media only screen and (min-width: 900px) {
+  #services ul.services--dropdown-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  #services li {
+    position: relative;
+    margin: 1em;
+  }
+
+  #services span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+    font-size: 2em;
+    white-space: normal;
+    line-height: normal;
+  }
+
+  #services span::after {
+    display: none;
+  }
+  
+  #services .slide {
+    position: absolute;
+    bottom: 0;
+  }  
+
+  #services label:has(span:hover, ~ .slide:hover) ~ .slide, 
+  #services input:focus ~ .slide {
+    height: 100%;
+    background-color: #d9d9d9;
+    opacity: 0.5;
+  }
+
+  #services label:has(span:hover, ~ .slide:hover) span, 
+  #services label:has(+ input:focus) span {
+    font-size: 0;
   }
 }
+
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
