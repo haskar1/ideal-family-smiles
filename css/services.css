@@ -15,18 +15,15 @@
 
   #services li {
     background-color: white;
-    margin-bottom: 2em;
-  }
-
-  #services label {
-    position: relative;
+    margin-bottom: 1em;
   }
 
   #services span {
     display: block;
+    position: relative;
     cursor : pointer;
     padding : 30px;
-    background : linear-gradient(#62C6F2, #00539B); 
+    background : linear-gradient(#62C6F2, #00539B 20%); 
     color : white;
     font-size : min(5vw, 1.3em);
     white-space: nowrap;
@@ -43,24 +40,43 @@
     margin-left: 1em;
   }
   
-  #services input[type="checkbox"] {
-    position: absolute; 
-    opacity: 0; 
-    height: 0px;
-  }  
-  
-  #services .slide {
+  #services span + .slide {
     clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 0px;
     overflow: hidden;
     text-align: center;
-    transition: height .4s ease;
+    padding: 0 1.5em;
+    transition: height .4s, padding .4s ease;
   }
   
-  #services input[type="checkbox"]:checked + .slide {
-    height: 300px;
+  #services span[clicked] + .slide/* , 
+  #services span:hover + .slide,
+  #services span:focus + .slide */ {
+    height: max-content;
+    padding: 3em 1.5em 0;
   }
+
+  #services .slide p .more-info {
+    font-size: 1em;
+    text-decoration: none;
+    color: blue;
+    white-space: nowrap;
+  }
+
+  #services .slide .button-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    line-height: normal;
+  }
+
+  /* #services .slide .button-solid  */
 }
 /* In between */
 @media only screen and (min-width: 900px) {
@@ -79,30 +95,54 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 300px;
+    min-height: 400px;
     font-size: 2em;
     white-space: normal;
     line-height: normal;
+    cursor: auto;
+    background : linear-gradient(#62C6F2, #00539B 10%); 
+    transition: font-size 0.4s ease;
+
+    -webkit-box-shadow: 0px 7px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 15px -1px rgba(0,0,0,0.75);    
+    box-shadow: 0px 7px 15px -1px rgba(0,0,0,0.75);
+
   }
 
   #services span::after {
     display: none;
   }
   
-  #services .slide {
+  #services span + .slide {
     position: absolute;
     bottom: 0;
+    padding: 0 2.5em;
   }  
 
-  #services label:has(span:hover, ~ .slide:hover) ~ .slide, 
-  #services input:focus ~ .slide {
-    height: 100%;
-    background-color: #d9d9d9;
-    opacity: 0.5;
+  #services .slide p {
+    color: white;
   }
 
-  #services label:has(span:hover, ~ .slide:hover) span, 
-  #services label:has(+ input:focus) span {
+  #services .slide p .more-info {
+    color: rgb(0, 255, 247);
+    font-weight: 500;
+  }
+
+  #services span:hover + .slide,
+  #services span:focus + .slide, 
+  #services span[clicked] + .slide, 
+  #services .slide:hover, 
+  #services .slide:has(*:focus) {
+    height: 100%;
+    padding: 3em 2.5em 0;
+  }
+
+  #services span:hover,
+  #services span:focus, 
+  #services span[clicked], 
+  #services span:has(+ .slide:hover), 
+  #services span:has(+ .slide:focus), 
+  #services span:has(+ .slide *:focus) {
     font-size: 0;
   }
 }
