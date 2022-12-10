@@ -45,13 +45,13 @@ function collapseAllServices() {
 
 
 /******************************
- Fixes a bug when you click on service in viewport < 900px, then change viewport to >= 900px...
+ Fixes a bug when you click on service in viewport < 1300px, then change viewport to >= 1300px...
  The bug: after clicking a service in small viewport, the description (.slide) would stay open even after changing viewport, 
  but the service's name (span) would also be visible, so they'd overlap.
  ******************************/
 
-// Create a condition that targets viewports at least 900px wide
-const mediaQuery = window.matchMedia('(min-width: 900px)');
+// Create a condition that targets viewports at least 1300px wide
+const mediaQuery = window.matchMedia('(min-width: 1300px)');
 let viewportPassedMinWidth = false;
 
 function handleViewportChange(e) {
@@ -60,7 +60,7 @@ function handleViewportChange(e) {
     collapseServiceOnMouseleave(e);
     viewportPassedMinWidth = true;
   }
-  
+
   else if (!e.matches && viewportPassedMinWidth === true) {
     [...services].forEach(service => 
       service.removeEventListener('mouseleave', removeClickedAttribute)

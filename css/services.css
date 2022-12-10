@@ -54,9 +54,7 @@
     transition: height .4s, padding .4s ease;
   }
   
-  #services span[clicked] + .slide/* , 
-  #services span:hover + .slide,
-  #services span:focus + .slide */ {
+  #services span[clicked] + .slide {
     height: max-content;
     padding: 3em 1.5em 0;
   }
@@ -75,11 +73,16 @@
     margin: 2em auto;
     line-height: normal;
   }
-
-  /* #services .slide .button-solid  */
 }
-/* In between */
+
 @media only screen and (min-width: 900px) {
+  #services span {
+    padding-left: 7%;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
   #services ul.services--dropdown-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
