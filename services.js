@@ -52,33 +52,39 @@ function collapseAllServices() {
 
 // Create a condition that targets viewports at least 1300px wide
 const mediaQuery = window.matchMedia('(min-width: 1300px)');
-let viewportPassedMinWidth = false;
+const serviceDescriptions = document.querySelectorAll('#services ul li .slide');
+
+let viewportPassedMinWidthOnce = false;
 
 function handleViewportChange(e) {
   // Check if the media query is true
   if (e.matches) {
     collapseServiceOnMouseleave(e);
-    viewportPassedMinWidth = true;
+    viewportPassedMinWidthOnce = true;
   }
 
-  else if (!e.matches && viewportPassedMinWidth === true) {
-    [...services].forEach(service => 
-      service.removeEventListener('mouseleave', removeClickedAttribute)
+  // Anytime viewport becomes large then goes to small, turn off the event listener
+  else if (!e.matches && viewportPassedMinWidthOnce === true) {
+    [...serviceDescriptions].forEach(serviceDescription => 
+      serviceDescription.removeEventListener('mouseover', removeClickedAttribute)
     )
 
-    viewportPassedMinWidth = false;
+    viewportPassedMinWidthOnce = false;
   }
 }
 
 function collapseServiceOnMouseleave(e) {
-  [...services].forEach(service => 
-    service.addEventListener('mouseleave', removeClickedAttribute)
+  [...serviceDescriptions].forEach(serviceDescription => 
+    serviceDescription.addEventListener('mouseover', removeClickedAttribute)
   )
 }
 
 function removeClickedAttribute(e) {
+  // remove 'clicked' attribute from the current service's span element
   let clickedService = e.currentTarget;
-  clickedService.removeAttribute('clicked');
+  clickedService.previousElementSibling.firstElementChild.removeAttribute('clicked');
+
+  clickedService.removeEventListener('mouseover', removeClickedAttribute)
 }
 
 // Register event listener
