@@ -3,92 +3,96 @@
  Also collapses any other open service descriptions.
  ******************************/
 
-const services = document.querySelectorAll('#services ul li span');
+const serviceTitles = document.querySelectorAll('#services ul li span');
 
-[...services].forEach(service => 
-  service.addEventListener('click', (e) => {
-    let clickedService = e.target;
-
-    clickedService.toggleAttribute('clicked');
-    collapseOtherServices(clickedService);
+[...serviceTitles].forEach(serviceTitle => {
+  serviceTitle.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      addClickEventListener(e);
+      collapseOtherServices(e);
+      makeChildrenTabbable(e);
+    }
   })
-)
+});
 
-function collapseOtherServices(clickedService) {
-  [...services].forEach(service => {
-    if (service !== clickedService) {
-      service.removeAttribute('clicked');
+function addClickEventListener(e) {
+  // .span-wrapper element
+  e.currentTarget.parentElement.toggleAttribute('clicked');
+}
+
+function collapseOtherServices(e) {
+  [...serviceTitles].forEach(serviceTitle => {
+    if (serviceTitle !== e.currentTarget) {
+      makeChildrenUntabbable(serviceTitle);
+      serviceTitle.parentElement.removeAttribute('clicked');
+    }
+  });
+}
+
+function makeChildrenTabbable(e) {
+  const childLinks = e.currentTarget.parentElement.nextElementSibling.querySelectorAll('a');
+  
+  [...childLinks].forEach(childLink => {
+    if (childLink.hasAttribute('tabindex')) {
+      childLink.removeAttribute('tabindex');
+    }
+    else {
+      childLink.setAttribute('tabindex', '-1');
     }
   })
 }
 
-
-
-/******************************
- Collapse all services when you click outside of the services section (if you click on whitespace on the page)
- ******************************/
-
- document.addEventListener('click', (e) => {
-  if (e.target.matches('#services ul li *')) {
-    return;
-  }
-
-  collapseAllServices();
-})
-
-function collapseAllServices() {
-  [...services].forEach(service => {
-    service.removeAttribute('clicked');
+function makeChildrenUntabbable(serviceTitle) {
+  const childLinks = serviceTitle.parentElement.nextElementSibling.querySelectorAll('a');
+  
+  [...childLinks].forEach(childLink => {
+    childLink.setAttribute('tabindex', '-1');
   })
 }
 
 
 
+
 /******************************
- Fixes a bug when you click on service in viewport < 1300px, then change viewport to >= 1300px...
- The bug: after clicking a service in small viewport, the description (.slide) would stay open even after changing viewport, 
- but the service's name (span) would also be visible, so they'd overlap.
+ Create a condition that targets viewports less than 1300px wide (mobile, tablet, and small desktop view)
+ It removes click event listeners for the services so that the user can only use hover or tab instead
  ******************************/
 
-// Create a condition that targets viewports at least 1300px wide
-const mediaQuery = window.matchMedia('(min-width: 1300px)');
-const serviceDescriptions = document.querySelectorAll('#services ul li .slide');
-
-let viewportPassedMinWidthOnce = false;
+const mediaQuery = window.matchMedia('(max-width: 1299px)');
 
 function handleViewportChange(e) {
   // Check if the media query is true
   if (e.matches) {
-    collapseServiceOnMouseleave(e);
-    viewportPassedMinWidthOnce = true;
+    addClickEventListeners();
   }
-
-  // Anytime viewport becomes large then goes to small, turn off the event listener
-  else if (!e.matches && viewportPassedMinWidthOnce === true) {
-    [...serviceDescriptions].forEach(serviceDescription => 
-      serviceDescription.removeEventListener('mouseover', removeClickedAttribute)
-    )
-
-    viewportPassedMinWidthOnce = false;
+  else {
+    removeClickEventListeners();
+    collapseAllServices();
   }
 }
 
-function collapseServiceOnMouseleave(e) {
-  [...serviceDescriptions].forEach(serviceDescription => 
-    serviceDescription.addEventListener('mouseover', removeClickedAttribute)
-  )
+function addClickEventListeners() {
+  [...serviceTitles].forEach(serviceTitle => {
+    serviceTitle.addEventListener('click', addClickEventListener);
+    serviceTitle.addEventListener('click', collapseOtherServices);
+  });
 }
 
-function removeClickedAttribute(e) {
-  // remove 'clicked' attribute from the current service's span element
-  let clickedService = e.currentTarget;
-  clickedService.previousElementSibling.firstElementChild.removeAttribute('clicked');
+function removeClickEventListeners() {
+  [...serviceTitles].forEach(serviceTitle => {
+    serviceTitle.removeEventListener('click', addClickEventListener);
+    serviceTitle.removeEventListener('click', collapseOtherServices);
+  });
+}
 
-  clickedService.removeEventListener('mouseover', removeClickedAttribute)
+function collapseAllServices() {
+  [...serviceTitles].forEach(serviceTitle => {
+    serviceTitle.parentElement.removeAttribute('clicked');
+  })
 }
 
 // Register event listener
-mediaQuery.addListener(handleViewportChange)
+mediaQuery.addEventListener('change', handleViewportChange)
 
 // Initial check
 handleViewportChange(mediaQuery)

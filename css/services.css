@@ -40,8 +40,12 @@
     right: 10%;
     margin-left: 1em;
   }
+
+  #services .span-wrapper[clicked] span::after {
+    content: "—";
+  }
   
-  #services .span-wrapper + .slide {
+  #services .slide {
     clear: both;
     display: flex;
     flex-direction: column;
@@ -55,8 +59,8 @@
     text-align: center;
     transition: all 0.4s ease;
   }
-  
-  #services .span-wrapper:has(span[clicked]) + .slide {
+
+  #services .span-wrapper[clicked] + .slide {
     max-height: 400px;
     padding-top: 2.5em;
   }
@@ -87,7 +91,7 @@
 @media only screen and (min-width: 1300px) {
   #services ul.services--dropdown-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     max-width: 80em;
   }
 
@@ -109,7 +113,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 10em;
+    min-height: 8em;
     font-size: 2em;
     white-space: normal;
     line-height: normal;
@@ -120,13 +124,20 @@
     display: none;
   }
   
-  #services .span-wrapper + .slide {
+  #services .slide {
     height: 0px;
     max-height: none;
     position: absolute;
     bottom: 0;
     padding: 0 2.5em;
+    font-size: 0.85em;
   }  
+
+  #services .span-wrapper[clicked] + .slide, 
+  #services li:hover .slide {
+    height: 100%;
+    padding-top: 2em;
+  }
 
   #services .slide p {
     color: white;
@@ -138,26 +149,13 @@
     font-weight: 500;
   }
 
-  #services .span-wrapper:has(span:hover) + .slide,
-  #services .span-wrapper:has(span:focus) + .slide, 
-  #services .span-wrapper:has(span[clicked]) + .slide, 
-  #services .slide:hover, 
-  #services .slide:has(*:focus) {
-    height: 100%;
-    padding: 3em 2.5em 0;
-  }
-
-  #services span {
+  #services .span-wrapper span {
     opacity: 1;
     transition: opacity 0.4s ease;
   }
 
-  #services span:hover,
-  #services span:focus, 
-  #services span[clicked], 
-  #services .span-wrapper:has(+ .slide:hover) span, 
-  #services .span-wrapper:has(+ .slide:focus) span, 
-  #services .span-wrapper:has(+ .slide *:focus) span {
+  #services .span-wrapper[clicked] span, 
+  #services li:hover span {
     opacity: 0;
   }
 }
