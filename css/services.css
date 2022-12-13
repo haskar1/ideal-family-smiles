@@ -43,6 +43,7 @@
 
   #services .span-wrapper[clicked] span::after {
     content: "—";
+    right: 9.7%;
   }
   
   #services .slide {

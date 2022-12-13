@@ -4,18 +4,19 @@
  ******************************/
 
 const serviceTitles = document.querySelectorAll('#services ul li span');
+const serviceRequestAppointmentBtns = document.querySelectorAll('#services ul li .slide .button-solid');
 
 [...serviceTitles].forEach(serviceTitle => {
   serviceTitle.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-      addClickEventListener(e);
+      addClickedAttribute(e);
       collapseOtherServices(e);
       makeChildrenTabbable(e);
     }
   })
 });
 
-function addClickEventListener(e) {
+function addClickedAttribute(e) {
   // .span-wrapper element
   e.currentTarget.parentElement.toggleAttribute('clicked');
 }
@@ -23,7 +24,7 @@ function addClickEventListener(e) {
 function collapseOtherServices(e) {
   [...serviceTitles].forEach(serviceTitle => {
     if (serviceTitle !== e.currentTarget) {
-      makeChildrenUntabbable(serviceTitle);
+      makeChildrenUntabbable();
       serviceTitle.parentElement.removeAttribute('clicked');
     }
   });
@@ -42,10 +43,10 @@ function makeChildrenTabbable(e) {
   })
 }
 
-function makeChildrenUntabbable(serviceTitle) {
-  const childLinks = serviceTitle.parentElement.nextElementSibling.querySelectorAll('a');
+function makeChildrenUntabbable() {
+  const allServicesChildLinks = document.querySelectorAll('#services ul .more-info, #services ul .button-solid');
   
-  [...childLinks].forEach(childLink => {
+  [...allServicesChildLinks].forEach(childLink => {
     childLink.setAttribute('tabindex', '-1');
   })
 }
@@ -64,23 +65,25 @@ function handleViewportChange(e) {
   // Check if the media query is true
   if (e.matches) {
     addClickEventListeners();
+    removeFocusOutEventListeners();
   }
   else {
     removeClickEventListeners();
     collapseAllServices();
+    addFocusOutEventListeners();
   }
 }
 
 function addClickEventListeners() {
   [...serviceTitles].forEach(serviceTitle => {
-    serviceTitle.addEventListener('click', addClickEventListener);
+    serviceTitle.addEventListener('click', addClickedAttribute);
     serviceTitle.addEventListener('click', collapseOtherServices);
   });
 }
 
 function removeClickEventListeners() {
   [...serviceTitles].forEach(serviceTitle => {
-    serviceTitle.removeEventListener('click', addClickEventListener);
+    serviceTitle.removeEventListener('click', addClickedAttribute);
     serviceTitle.removeEventListener('click', collapseOtherServices);
   });
 }
@@ -89,6 +92,50 @@ function collapseAllServices() {
   [...serviceTitles].forEach(serviceTitle => {
     serviceTitle.parentElement.removeAttribute('clicked');
   })
+}
+
+function addFocusOutEventListeners() {
+  [...serviceTitles].forEach(serviceTitle => {
+    serviceTitle.addEventListener('focusout', removeClickedAttributeOnTitleBlur);
+  });
+
+  [...serviceRequestAppointmentBtns].forEach(button => {
+    button.addEventListener('focusout', removeClickedAttributeOnButtonBlur);
+  });
+}
+
+function removeClickedAttributeOnTitleBlur(e) {
+  const spanWrapper = e.currentTarget.parentElement;
+
+  if (spanWrapper.parentElement.contains(e.relatedTarget)) {
+    return;
+  } 
+  if (spanWrapper.hasAttribute('clicked')) {
+    makeChildrenUntabbable();
+    spanWrapper.removeAttribute('clicked');
+  }
+}
+
+function removeClickedAttributeOnButtonBlur(e) {
+  const spanWrapper = e.currentTarget.parentElement.previousElementSibling;
+
+  if (spanWrapper.parentElement.contains(e.relatedTarget)) {
+    return;
+  } 
+  if (spanWrapper.hasAttribute('clicked')) {
+    makeChildrenUntabbable();
+    spanWrapper.removeAttribute('clicked');
+  }
+}
+
+function removeFocusOutEventListeners() {
+  [...serviceTitles].forEach(serviceTitle => {
+    serviceTitle.removeEventListener('focusout', removeClickedAttributeOnTitleBlur);
+  });
+
+  [...serviceRequestAppointmentBtns].forEach(button => {
+    button.removeEventListener('focusout', removeClickedAttributeOnButtonBlur);
+  });
 }
 
 // Register event listener
