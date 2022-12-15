@@ -244,7 +244,7 @@
     text-align: center;
     width: 90%;
     padding: 4em 0;
-    background: #f6f6fc;
+    background: linear-gradient(var(--primary), var(--primary) 2.5%, white 2.5%, white);
     -webkit-box-shadow: 0px -7px 11px -1px rgba(0,0,0,0.2); 
     box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
     border-radius: 10px;
@@ -255,7 +255,7 @@
   }
   #office .title {
     font-size: min(15vw, 3em);
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
   }
   #office .office-info h2 {
     font-size: min(8vw, 2em);
@@ -270,6 +270,22 @@
     margin-bottom: 0.75em;
     padding: 0.15em 0.5em;
     text-decoration: none;
+  }
+  #office .office-info--address {
+    position: relative;
+    z-index: 1;
+    padding-top: 3em;
+  }
+  #office .office-info--address::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(240, 240, 240), white);
+    border-radius: 10%;
   }
   #office .office-info a.office-address:hover, 
   #office .office-info a.office-address:focus {
@@ -303,12 +319,14 @@
     gap: 4em;
   }
   #office .office-info--address {
-    padding: 0 2.25em;
-    margin-top: 1em;
+    padding: 2em 2.25em 0;
   }
   #office .office-info a, 
   #office .office-info h2 {
     font-size: 2.25em;
+  }
+  #office .office-info h2 {
+    
   }
   #office .office-info iframe {
     width: 400px;
