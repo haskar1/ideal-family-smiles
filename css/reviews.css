@@ -64,7 +64,7 @@
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: auto;
+    /* margin-top: auto; */
   }
   #reviews .review .star-group .name {
     color: #1A1A1A;
@@ -106,8 +106,8 @@
             column-gap: 1.875em;
   }
   #reviews .review {
-    margin: 0;
-    margin-bottom: 9.375em;
+    margin-top: 6em;
+    margin-bottom: auto;
   }
   #reviews .review:last-of-type {
     margin-bottom: 9.375em;
@@ -196,7 +196,6 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: 6.25em;
   }
   #cta:before {
     display: none;

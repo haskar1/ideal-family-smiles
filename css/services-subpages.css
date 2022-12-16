@@ -45,7 +45,7 @@
   #sidebyside .content {
     margin: auto;
     margin-top: 4.6875em;
-    width: 90%;
+    width: 95%;
     max-width: 45em;
     text-align: center;
   }
@@ -67,8 +67,12 @@
   }
   #sidebyside .content p + ul li {
     margin-left: 2em;
+    margin-bottom: 0.75em;
     padding-left: 1em;
     font-size: min(4.5vw, 1.25em);
+  }
+  #sidebyside .content p + ul li:first-child {
+    margin-top: 3em;
   }
   #sidebyside .content .video {
     position: relative;

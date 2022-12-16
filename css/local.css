@@ -249,87 +249,78 @@
     box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
     border-radius: 10px;
   }
-  #office .office-info {
-    width: 90%;
+  #office .title {
+    font-size: min(14vw, 3em);
+    margin-bottom: 1em;
+    text-align: center;
+  }  
+  #office .content {
     margin: auto;
   }
-  #office .title {
-    font-size: min(15vw, 3em);
-    margin-bottom: 0.5em;
-  }
-  #office .office-info h2 {
+  #office h2 {
     font-size: min(8vw, 2em);
     font-weight: 400;
     margin-bottom: 0.75em;
   }
-  #office .office-info a {
-    display: block;
+  #office .contact-info {
+    margin-bottom: 4em;
+  }
+  #office .contact-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: max-content;
-    font-size: min(8vw, 2em);
+    max-width: 100%;
+    font-size: min(6vw, 1.25em);
     margin: auto;
     margin-bottom: 0.75em;
     padding: 0.15em 0.5em;
     text-decoration: none;
   }
-  #office .office-info--address {
-    position: relative;
-    z-index: 1;
-    padding-top: 3em;
-  }
-  #office .office-info--address::before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgb(240, 240, 240), white);
-    border-radius: 10%;
-  }
-  #office .office-info a.office-address:hover, 
-  #office .office-info a.office-address:focus {
+  #office .address:hover, 
+  #office .address:focus {
     text-decoration: underline;
   }
-  #office .office-info iframe {
+  #office .address img {
+    width: 3em;
+  }
+  #office .phone img {
+    width: 2em;
+    margin-right: 1em;
+  }
+  #office iframe {
+    width: 90%;
+    max-width: 400px;
     display: block;
     margin: auto;
-    margin-bottom: 6em;
-    width: 100%;
-    max-width: 400px;
+    margin-bottom: 4em;
   }
   #office .button-solid {
     display: inline-block;
-    font-size: 1em;
+    font-size: min(4vw, 1em);
+    max-width: 95%;
   }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #office .container {
-    padding: 7em 0;
+    text-align: center;
+    padding: 7em 0 4em;
   }
-  #office .title {
-    margin-bottom: 2em;
-  }
-  #office .office-info {
+  #office .content {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: center;
-    gap: 4em;
+    margin-bottom: 6em;
   }
-  #office .office-info--address {
-    padding: 2em 2.25em 0;
+  #office .contact-info {
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: 6em;
   }
-  #office .office-info a, 
-  #office .office-info h2 {
-    font-size: 2.25em;
-  }
-  #office .office-info h2 {
-    
-  }
-  #office .office-info iframe {
-    width: 400px;
+  #office iframe {
+    margin: 0;
   }
   #office .button-solid {
     font-size: 1.25em;
@@ -397,7 +388,7 @@
     font-size: 1.5em;
   }
   #cta .button-solid {
-    font-size: 1.2em;
+    font-size: min(4vw, 1em);
   }
 }
 /* Small Desktop */
