@@ -87,7 +87,7 @@
     cursor: pointer;
   }
   .button-solid {
-    font-size: 0.875em;
+    font-size: min(5vw, 1em);
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -126,8 +126,8 @@
     margin: 0;
   }
 }
-/* Scale full website with the viewport width */
-@media only screen and (min-width: 2000px) {
+/* Scale full website with the viewport width at very large screen sizes */
+@media only screen and (min-width: 1800px) {
   body,
   html {
     font-size: .85vw;

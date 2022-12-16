@@ -232,7 +232,7 @@
     font-size: 1.5em;
   }
   #cta .button-solid {
-    font-size: 1.2em;
+    font-size: min(4.5vw, 1em);
   }
 }
 /* Small Desktop */

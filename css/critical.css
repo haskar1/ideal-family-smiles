@@ -95,7 +95,6 @@
     margin: auto;
     display: inline-block;
     width: auto;
-    font-size: 1.2em;
   }
   #mission .content {
     max-width: 60em;
@@ -110,7 +109,7 @@
     font-weight: 400;
   }
   #mission .content p {
-    text-align: justify;
+    text-align: center;
     font-size: 1.5em;
     margin-bottom: 2em;
   }
@@ -155,12 +154,15 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  .services-title.container {
+  #services {
+    margin-bottom: 8em;
+  }
+  #services .title {
     text-align: center;
     margin-bottom: 1em;
     font-size: min(15vw, 3em);
   }
-  /* .services {
+  /* #services {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -196,17 +198,16 @@
     background-size: 30px 100%, 30px 100%;
     background-attachment: local, scroll;
   } */
-  .services .card {
+  #services .card {
     max-width: 25em;
     margin: 4em auto;
     text-align: center;
   }
-  .services .card:last-of-type {
+  #services .card:last-of-type {
     margin: auto;
     max-width: 40em;
-    font-size: min(8vw, 0.875em);
   }
-  .services .card picture {
+  #services .card picture {
     background: var(--primary);
     width: 5.5em;
     height: 5.5em;
@@ -223,11 +224,11 @@
     margin-bottom: 1.4375em;
     border-radius: 50%;
   }
-  .services .card picture img {
+  #services .card picture img {
     width: 3em;
     height: 3em;
   }
-  .services .card h2 {
+  #services .card h2 {
     text-align: center;
     font-size: 2em;
     line-height: 1.35em;
@@ -235,45 +236,42 @@
     color: #1a1a1a;
     margin-bottom: 0.65em;
   }
-  .services .card p {
+  #services .card p {
     text-align: center;
     line-height: 1.33333333em;
     width: 90%;
     opacity: .7;
     margin: auto;
   }
-  .services .view-more-btn .button-solid {
-    font-size: 1.2em;
-  }
-  .services .view-all-btn .button-solid {
-    font-size: 1.3em;
-  }
-  .services .expanded-service {
+  #services .expanded-service {
     display: none;
   }
-  .services .expanded-service[clicked] {
+  #services .expanded-service[clicked] {
     display: block;
   }
-  .services .view-more-btn[clicked]  {
+  #services .view-more-services[clicked]  {
     display: none;
   }
 }
 /* In-between */
 @media only screen and (min-width: 51em) {
-  .services {
+  #services {
+    margin-bottom: 10em;
+  }
+  #services .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .services .card {
+  #services .card {
     margin: 2em auto;
   }
-  .services .view-more-btn {
+  #services .view-more-services {
     display: none;
   }
-  .services .expanded-service {
+  #services .expanded-service {
     display: block;
   }
-  .services .card:last-of-type {
+  #services .card:last-of-type {
     grid-column-end: span 2;
     max-width: none;
     margin-top: 2em;
@@ -281,15 +279,16 @@
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-  .services {
+  #services .container {
     grid-template-columns: repeat(3, 1fr);
   }
-  .services .card {
+  #services .card {
     margin: 0 1.5em 4em;
     max-width: none;
   }
-  .services .card:last-of-type {
+  #services .card:last-of-type {
     grid-column-end: span 3;
+    margin-top: 0;
   }
 }
 /* Dark mode */

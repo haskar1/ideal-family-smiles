@@ -79,6 +79,10 @@
     align-items: center;
     margin: 2em auto;
     line-height: normal;
+    font-size: min(4.5vw, 0.8em);
+  }
+  #services .emergency-dentistry .button-solid {
+    font-size: min(5vw, 1.2em);
   }
 }
 
@@ -90,10 +94,14 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
+  #services .container {
+    width: 90%;
+  }
+
   #services ul.services--dropdown-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 80em;
+    max-width: none;
   }
 
   #services li {
@@ -130,9 +138,20 @@
     max-height: none;
     position: absolute;
     bottom: 0;
-    padding: 0 2.5em;
-    font-size: 0.85em;
+    padding: 0 1em;
+    font-size: max(1vw, 0.9em);
   }  
+
+  #services .slide .button-solid {
+    margin: 1em auto;
+    padding: 0 1em;
+    min-height: 3em;
+    font-size: 1em;
+  }
+
+  #services .emergency-dentistry .button-solid {
+    font-size: 1em;
+  }
 
   #services .span-wrapper[clicked] + .slide, 
   #services li:hover .slide {

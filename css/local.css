@@ -4,8 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #sidebyside {
-    padding: 50px 0;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
   }
   #sidebyside .container {
     display: flex;
@@ -31,9 +30,6 @@
     text-align: left;
     padding-left: min(5vw, 1.5em);
     margin-bottom: 2em;
-  }
-  #sidebyside .content .button-solid {
-    font-size: 1.20em;
   }
   #sidebyside .image-box {
     display: block;
@@ -78,15 +74,10 @@
     object-fit: cover;
   }
 }
-/* Inbetween */
-@media only screen and (min-width: 666px) {
-  #sidebyside {
-    padding: 6.25em 0;
-  }
-}
+
 @media only screen and (min-width: 900px) {
   #sidebyside {
-    padding: 9.375em 0;
+    margin-bottom: 10em;
   }
   #sidebyside .container {
     max-width: 86.9375em;
@@ -232,6 +223,8 @@
     left: -6.8125em;
   }
 }
+
+
 /*-- -------------------------- -->
 <---          Office            -->
 <--- -------------------------- -*/
@@ -243,7 +236,8 @@
   #office .container {
     text-align: center;
     width: 90%;
-    padding: 4em 0;
+    max-width: 70em;
+    padding: 4em 0 2em;
     background: linear-gradient(var(--primary), var(--primary) 2.5%, white 2.5%, white);
     -webkit-box-shadow: 0px -7px 11px -1px rgba(0,0,0,0.2); 
     box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
@@ -289,8 +283,7 @@
     margin-right: 1em;
   }
   #office iframe {
-    width: 90%;
-    max-width: 400px;
+    max-width: 90%;
     display: block;
     margin: auto;
     margin-bottom: 4em;
@@ -299,6 +292,38 @@
     display: inline-block;
     font-size: min(4vw, 1em);
     max-width: 95%;
+  }
+  #office .button-solid.hidden {
+    display: none;
+  }
+  #office .content.other-offices.hidden {
+    display: none;
+  }
+  #office .title.other-offices.hidden {
+    display: none;
+  }
+  #office .title.other-offices {
+    display: inline-block;
+    position: relative;
+    font-size: min(10vw, 3em);
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  #office .title.other-offices:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: var(--primary);
+    opacity: 1;
+    bottom: -0.3em;
+    border-radius: 0.15789474em;
+    left: 0em;
+    right: -0.31578947em;
+  }
+  #office .contact-info.other-offices:last-of-type {
+    margin-bottom: 0;
   }
 }
 /* Small Desktop */
@@ -314,10 +339,19 @@
             justify-content: center;
     margin-bottom: 6em;
   }
+  #office .content.other-offices {
+    margin-bottom: 0;
+  }
   #office .contact-info {
     align-self: center;
     margin-bottom: 0;
     margin-right: 6em;
+  }
+  #office .contact-info.other-offices:first-of-type {
+    margin-right: 12em;
+  }
+  #office .contact-info.other-offices:last-of-type {
+    margin-right: 0;
   }
   #office iframe {
     margin: 0;
@@ -326,7 +360,15 @@
     font-size: 1.25em;
   }
 }
-
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #office .contact-info {
+    margin-right: 10em;
+  }
+  #office .contact-info.other-offices:first-of-type {
+    margin-right: 16em;
+  }
+}
 
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
@@ -388,7 +430,7 @@
     font-size: 1.5em;
   }
   #cta .button-solid {
-    font-size: min(4vw, 1em);
+    font-size: min(4.5vw, 1em);
   }
 }
 /* Small Desktop */

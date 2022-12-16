@@ -43,14 +43,31 @@ function toggleLoadingCircle(e) {
 }
 
 
-// "View More" button to expand services list on mobile view
+// "View More Services" button to expand services list
 
-const viewMoreBtn = document.querySelector('#services .view-more-btn .button-solid');
+const viewMoreServicesBtn = document.querySelector('#services .view-more-services .button-solid');
 const expandedServices = document.querySelectorAll('#services .expanded-service');
 
-if (viewMoreBtn) {
-  viewMoreBtn.addEventListener('click', () => {
-    viewMoreBtn.parentElement.toggleAttribute('clicked');
+if (viewMoreServicesBtn) {
+  viewMoreServicesBtn.addEventListener('click', () => {
+    viewMoreServicesBtn.parentElement.toggleAttribute('clicked');
     [...expandedServices].forEach(service => service.toggleAttribute('clicked'));
   })  
 }
+
+
+// "View More Offices" button to expand offices list
+
+const viewMoreOfficesBtn = document.querySelector('#office .view-more-offices');
+const extendedOfficeList = document.querySelector('#office .content.hidden');
+const extendedOfficeListTitle = document.querySelector('#office .title.hidden');
+
+if (viewMoreOfficesBtn) {
+  viewMoreOfficesBtn.addEventListener('click', () => {
+    viewMoreOfficesBtn.classList.add('hidden');
+    extendedOfficeList.classList.remove('hidden');
+    extendedOfficeListTitle.classList.remove('hidden');
+  })  
+}
+
+

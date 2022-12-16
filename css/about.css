@@ -41,12 +41,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    max-width: 50em;
   }
   #sidebyside .content {
     margin: auto;
     margin-top: 4.6875em;
-    width: 90%;
-    max-width: 45em;
     text-align: center;
   }
   #sidebyside .content h2 {
@@ -115,16 +115,15 @@
 }
 /* Inbetween */
 @media only screen and (min-width: 900px) {
+  #sidebyside {
+    margin-bottom: 8em;
+  }
   #sidebyside .container {
     display: block;
-    max-width: 60em;
-  }
-  #sidebyside .content {
-    width: 100%;
-    max-width: none;
   }
   #sidebyside .content h2 {
     text-align: left;
+    padding-top: 1em;
   }
   #sidebyside .content p {
     padding-left: 0;
@@ -133,6 +132,151 @@
     float: left;
     margin-right: 5em;
     margin-bottom: 5em;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Office            -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #office {
+    margin-bottom: 5em;
+  }
+  #office .container {
+    text-align: center;
+    width: 90%;
+    max-width: 70em;
+    padding: 4em 0 2em;
+    background: linear-gradient(var(--primary), var(--primary) 2.5%, white 2.5%, white);
+    -webkit-box-shadow: 0px -7px 11px -1px rgba(0,0,0,0.2); 
+    box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  #office .title {
+    font-size: min(14vw, 3em);
+    margin-bottom: 1em;
+    text-align: center;
+  }  
+  #office .content {
+    margin: auto;
+  }
+  #office h2 {
+    font-size: min(8vw, 2em);
+    font-weight: 400;
+    margin-bottom: 0.75em;
+  }
+  #office .contact-info {
+    margin-bottom: 4em;
+  }
+  #office .contact-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    max-width: 100%;
+    font-size: min(6vw, 1.25em);
+    margin: auto;
+    margin-bottom: 0.75em;
+    padding: 0.15em 0.5em;
+    text-decoration: none;
+  }
+  #office .address:hover, 
+  #office .address:focus {
+    text-decoration: underline;
+  }
+  #office .address img {
+    width: 3em;
+  }
+  #office .phone img {
+    width: 2em;
+    margin-right: 1em;
+  }
+  #office iframe {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 4em;
+  }
+  #office .button-solid {
+    display: inline-block;
+    font-size: min(4vw, 1em);
+    max-width: 95%;
+  }
+  #office .button-solid.hidden {
+    display: none;
+  }
+  #office .content.other-offices.hidden {
+    display: none;
+  }
+  #office .title.other-offices.hidden {
+    display: none;
+  }
+  #office .title.other-offices {
+    display: inline-block;
+    position: relative;
+    font-size: min(10vw, 3em);
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  #office .title.other-offices:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2em;
+    background: var(--primary);
+    opacity: 1;
+    bottom: -0.3em;
+    border-radius: 0.15789474em;
+    left: 0em;
+    right: -0.31578947em;
+  }
+  #office .contact-info.other-offices:last-of-type {
+    margin-bottom: 0;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #office .container {
+    text-align: center;
+    padding: 7em 0 4em;
+  }
+  #office .content {
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: center;
+    margin-bottom: 6em;
+  }
+  #office .content.other-offices {
+    margin-bottom: 0;
+  }
+  #office .contact-info {
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: 6em;
+  }
+  #office .contact-info.other-offices:first-of-type {
+    margin-right: 12em;
+  }
+  #office .contact-info.other-offices:last-of-type {
+    margin-right: 0;
+  }
+  #office iframe {
+    margin: 0;
+  }
+  #office .button-solid {
+    font-size: 1.25em;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #office .contact-info {
+    margin-right: 10em;
+  }
+  #office .contact-info.other-offices:first-of-type {
+    margin-right: 16em;
   }
 }
 
@@ -196,7 +340,7 @@
     font-size: 1.5em;
   }
   #cta .button-solid {
-    font-size: 1.2em;
+    font-size: min(4.5vw, 1em);
   }
 }
 /* Small Desktop */
