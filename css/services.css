@@ -79,7 +79,7 @@
     align-items: center;
     margin: 2em auto;
     line-height: normal;
-    font-size: min(4.5vw, 0.8em);
+    font-size: min(4.6vw, 1em);
   }
   #services .emergency-dentistry .button-solid {
     font-size: min(5vw, 1.2em);

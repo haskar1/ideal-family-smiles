@@ -251,6 +251,14 @@
 @media only screen and (min-width: 1300px) {
   #form {
     font-size: inherit;
+    max-width: 90em;
+  }
+  #form .left-section {
+    margin-left: 10em;
+    margin-right: auto;
+  }
+  #form .contact-right {
+    margin-right: 5em;
   }
 }
 /* Dark Mode */

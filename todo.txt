@@ -7,3 +7,13 @@ change images on services section of home page
 make button font sizes consistent
   
 add other locations to about us page
+
+change background images
+
+change logo
+
+add cool background designs to home page, other pages? 
+
+remove gap property from footer
+
+update phone, email, address in footer and in contact page

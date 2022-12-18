@@ -41,7 +41,7 @@
 
     <title>Company Name | Reviews | Town and State</title>
 </head>
-<body>
+<body class="scroll">
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
@@ -100,135 +100,40 @@
         <!--                    LANDING                   -->
         <!-- ============================================ -->
     
-        <section id="int-hero">
+        <!-- <section id="int-hero">
             <h1 id="home-h">Our Reviews</h1>
             <picture>
                 <source media="(max-width: 600px)" srcset="../images/cabinets2-m.jpg">
                 <source media="(min-width: 601px)" srcset="../images/cabinets2.jpg">
                 <img aria-hidden="true" loading="lazy" decoding="async" src="../images/cabinets2.jpg" alt="" width="400" height="662">
             </picture>
-        </section>
+        </section> -->
+
 
         <!-- ============================================ -->
-        <!--                  Reviews                     -->
+        <!--                  APPOINTMENTS                 -->
         <!-- ============================================ -->
-
-        <section id="reviews">
+    
+        <section id="appointments">
             <div class="container">
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="../images/profile-woman.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        My dental hygienist helped to things very comfortable even though I can get very nervous going to the dentist. My dentist was very thorough. The office is also very nice.
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Kristin B.</span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="../images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="../images/profile-woman.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Best dental office I've ever been to. Very gentle dentists that are very experienced. The staff is always really friendly and helpful. I had to have a difficult procedure and it was amazing how smooth it went and how compassionate the dentist was during. The dental assistant is amazing as well and knows what she is doing  along with being very nice everytime.  Definitly recommend to people that have had bad experiences and anyone else who wants the best experience possible.
-                     </p>
-                     <div class="star-group">
-                         <span class="name">Amber H.</span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="../images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="../images/profile.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        The staff was very friendly, the office was clean, and covid 19 safety guidelines were being followed( masks, social distancing) I really appreciate that the dentist explained everything to me in detail before beginning my procedure. She also made me feel at ease about asking questions or stopping if I needed a break or felt any discomfort.
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Antonio D</span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="../images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="../images/profile-woman.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        absolutely best dental experience I have ever received. the doctor was Great. I was a nervous wreck and she kept me laughing and giggling. took the fear right out of me. have sent 4 of my friends all ready
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Kathryn H.</span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="../images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="../images/profile-woman.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        I called 9:30 am because I was having excruciating pains they set my appointment for 2pm. They got me in and out no wait I couldn’t be happier
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Markita C.</span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="../images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="../images/profile-woman.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        They are amazing with children! All of my children come here ranging from ages 5-13 and not once have my children felt any fear for the dentist , even after my 5 year old had a tooth extraction. They are awesome! Highly recommend them.
-                     </p>
-                     <div class="star-group">
-                         <span class="name">Anelgi S.</span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="../images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--             Final Call to Action             -->
-        <!-- ============================================ -->
-
-        <section id="cta">
-            <div class="container">
-                <h2 class="title">Start Smiling With Us Today</h2>
-                <p>
-                    Begin your journey towards a beautiful smile!
-                </p>
-                <a href="../contact/" class="button-solid">
-                    Request Appointment
-                    <div class="lds-ring">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <h2 class="title">Request an Appointment</h2>
+                <p>This does not guarantee your appointment. You will be contacted once the appointment is confirmed, or if it's unavailable.</p>
+                <div class="appointment-scheduler-wrapper">
+                    <div class="loading-wrapper">
+                        <div class="lds-ring active">
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                            <div class="active"></div>
+                        </div>
                     </div>
-                </a>
+                    <div class="script-wrapper">
+                        <!-- Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/l8fa4ai9ax0sru/LXSSDQKEZ9HYW.js'></script><!-- End Square Appointments Embed Code -->
+                    </div>
+                </div>
             </div>
-            <picture>
-                <source media="(max-width: 600px)" srcset="../images/cabinets2-m.webp">
-                <source media="(min-width: 601px)" srcset="../images/cabinets2.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="../images/cabinets2.jpg" alt="kitchen cabinets" width="1920" height="1280">
-             </picture>
         </section>
-
+        
     </main>
 
     <!-- ============================================ -->
@@ -291,7 +196,7 @@
         and we used these body.scroll styles to create some on scroll 
         animations with the navbar
     -->
-    <script defer>
+    <!-- <script defer>
         document.addEventListener('scroll', (e) => { 
             const scroll = document.documentElement.scrollTop;
             if(scroll >= 100){
@@ -300,7 +205,7 @@
             document.querySelector('body').classList.remove('scroll')
             }
         });
-    </script>
+    </script> -->
 
 </body>
 </html>

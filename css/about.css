@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    max-width: 50em;
+    max-width: 65em;
   }
   #sidebyside .content {
     margin: auto;
@@ -157,6 +157,7 @@
     font-size: min(14vw, 3em);
     margin-bottom: 1em;
     text-align: center;
+    font-weight: 700;
   }  
   #office .content {
     margin: auto;

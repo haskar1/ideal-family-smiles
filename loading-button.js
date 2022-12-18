@@ -71,3 +71,15 @@ if (viewMoreOfficesBtn) {
 }
 
 
+// "View More Reviews" button to expand reviews list
+
+const viewMoreReviewsBtn = document.querySelector('#reviews .view-more-reviews .button-solid');
+const expandedReviews = document.querySelectorAll('#reviews .expanded-review');
+
+if (viewMoreReviewsBtn) {
+  viewMoreReviewsBtn.addEventListener('click', () => {
+    viewMoreReviewsBtn.parentElement.toggleAttribute('clicked');
+    [...expandedReviews].forEach(review => review.toggleAttribute('clicked'));
+  })  
+}
+
