@@ -1,35 +1,33 @@
 /*-- -------------------------- -->
+<---        Navigation          -->
+<--- -------------------------- -*/
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  #navigation {
+    height: 3.75em !important;
+  }
+  #navigation .logo {
+    height: 2.75em !important;
+  }
+}
+
+
+/*-- -------------------------- -->
 <---        Appointments        -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #appointments {
-    margin-top: 5em;
-    margin-bottom: 3em;
-    text-align: center;
-  }
-  #appointments .container {
-    max-width: 80em;
-  }
-  #appointments .title {
-    font-size: min(14vw, 3em);
-    margin-bottom: 0.5em;
-    font-weight: 700;
-  }
-  #appointments .title + p {
-    margin-bottom: 3em;
-  }
-  #appointments .appointment-scheduler-wrapper {
-    position: relative;
-  }
   #appointments .loading-wrapper {
     position: absolute;
     text-align: center;
     height: 2.75em;
-    top: 1em;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    margin: auto;
     z-index: 0;
   }
   #appointments .lds-ring.active {
@@ -39,11 +37,13 @@
     position: relative;
     z-index: 1;
   }
-}
-
-/* Small Desktop */
-@media only screen and (min-width: 1025px) {
-  #appointments {
-    margin-top: 10em;
+  #appointments iframe {
+    position: fixed;
+    top: 3.75em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 3.75em) !important;
+    min-height: 0 !important;
   }
 }
