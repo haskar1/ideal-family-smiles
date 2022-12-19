@@ -42,8 +42,16 @@
     top: 3.75em;
     left: 0;
     right: 0;
-    bottom: 5em;
-    height: calc(100vh - 8.75em) !important;
+    bottom: 8em;
+    height: calc(100vh - 11.75em) !important;
     min-height: 0 !important;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  #appointments iframe {
+    bottom: 2em;
+    height: calc(100vh - 5.75em) !important;
   }
 }
