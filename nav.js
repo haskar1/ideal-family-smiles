@@ -14,7 +14,10 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 function closeNavbarOnOutsideClick() {
-    if (navbarMenu.classList.contains("open")) {
+    // Appointments page doesn't have footer, so this checks if footer exists
+    if (!footer) return
+
+    if (navbarMenu.classList.contains("open")) {   
         mainSection.addEventListener('click', removeMenuClasses)
         footer.addEventListener('click', removeMenuClasses)
     }

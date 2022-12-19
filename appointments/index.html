@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Swap our for actual link-->
-    <link rel="canonical" href="https://www.company.com/reviews">
+    <link rel="canonical" href="https://www.company.com/appointments">
 
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -33,13 +33,13 @@
     <link rel="preload" as="font" type="font/woff2" href="../fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <link rel="stylesheet" href="../css/root.css">
-    <link rel="stylesheet" href="../css/reviews.css">
+    <link rel="stylesheet" href="../css/appointments.css">
     <link rel="stylesheet" href="../css/dark.css">
     <link rel="stylesheet" href="../css/loading-button.css">
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
-    <title>Company Name | Reviews | Town and State</title>
+    <title>Company Name | Appointments | Town and State</title>
 </head>
 <body class="scroll">
     <!--Screen reader skip main nav-->
@@ -76,7 +76,7 @@
                     <li><a href="../">Home</a></li>
                     <li><a href="../about/">About Us</a></li>
                     <li><a href="../services/">Services</a></li>
-                    <li><a class="active" href="./">Reviews</a></li>
+                    <li><a class="active" href="./">Appointments</a></li>
                     <li><a href="../contact/">Contact</a></li>
                 </ul>
             </nav>
@@ -97,28 +97,10 @@
     <main id="main">
 
         <!-- ============================================ -->
-        <!--                    LANDING                   -->
-        <!-- ============================================ -->
-    
-        <!-- <section id="int-hero">
-            <h1 id="home-h">Our Reviews</h1>
-            <picture>
-                <source media="(max-width: 600px)" srcset="../images/cabinets2-m.jpg">
-                <source media="(min-width: 601px)" srcset="../images/cabinets2.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="../images/cabinets2.jpg" alt="" width="400" height="662">
-            </picture>
-        </section> -->
-
-
-        <!-- ============================================ -->
         <!--                  APPOINTMENTS                -->
         <!-- ============================================ -->
     
         <section id="appointments">
-            <!-- <div class="container">
-                <h2 class="title">Request an Appointment</h2>
-                <p>This does not guarantee your appointment. You will be contacted once the appointment is confirmed, or if it's unavailable.</p>
-            </div> -->
             <div class="appointment-scheduler-wrapper">
                 <div class="loading-wrapper">
                     <div class="lds-ring active">
@@ -128,84 +110,16 @@
                         <div class="active"></div>
                     </div>
                 </div>
-                <!-- <div class="script-wrapper"> -->
-                    <!-- Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/l8fa4ai9ax0sru/LXSSDQKEZ9HYW.js'></script><!-- End Square Appointments Embed Code -->
-                <!-- </div> -->
+                <!-- Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/l8fa4ai9ax0sru/LXSSDQKEZ9HYW.js'></script><!-- End Square Appointments Embed Code -->
             </div>
         </section>
 
     </main>
 
-    <!-- ============================================ -->
-    <!--                   Footer                     -->
-    <!-- ============================================ -->
-
-    <!-- <footer id="footer">
-        <div class="container">
-            <div class="left-section">
-                <a class="logo" href="../"><img loading="lazy" decoding="async" src="../images/logo-light.png" alt="logo" width="264" height="78"></a>
-                <p>
-                    Extra content if you need it, if not you can delete this whole p tag. I usually do.
-                </p>
-            </div>
-            <div class="right-section">
-                <div class="lists">
-                    <ul class="footer--hours">
-                        <li><h2>Hours</h2></li>
-                        <li class="day-and-time"><div>Monday:</div><div>8am - 5pm</div></li>
-                        <li class="day-and-time"><div>Tuesday:</div><div>8am - 5pm</div></li>
-                        <li class="day-and-time"><div>Wednesday:</div><div>8am - 5pm</div></li>
-                        <li class="day-and-time"><div>Thursday:</div><div>8am - 5pm</div></li>
-                        <li class="day-and-time"><div>Friday:</div><div>Closed</div></li>
-                        <li class="day-and-time"><div>Saturday:</div><div>Closed</div></li>
-                        <li class="day-and-time"><div>Sunday:</div><div>Closed</div></li>
-                    </ul>
-                    <ul class="footer--contact">
-                        <li><h2>Contact</h2></li>
-                        <li><a href="../contact/">First Address Line<br>Denver CO 80206</a></li>
-                        <li><a href="tel:555-779-4407">T: (555) 779-4407</a></li>
-                        <li><a href="mailto:email@email.com">Click to Email</a></li>
-                    </ul>
-                    <ul class="footer--links">
-                        <li><h2>Links</h2></li>
-                        <div class="item-list">
-                            <li><a href="../">Home</a></li>
-                            <li><a href="../about/">About Us</a></li>
-                            <li><a href="../services/">Services</a></li>
-                            <li><a href="./">Reviews</a></li>
-                            <li><a href="../contact/">Contact</a></li>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="credit">
-            <span>Designed and Hand Coded by</span>
-            <a href="" target="_blank" rel="noopener">Your Company Name</a>
-            <span class="copyright"> Copyright 2021 - Present</span>
-        </div>
-    </footer> -->
 
     <script defer src="../nav.js"></script>
     <!-- <script defer src="./dark.js"></script> -->
     <script defer src="../loading-button.js"></script>
-
-    <!--
-        This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
-        animations with the navbar
-    -->
-    <!-- <script defer>
-        document.addEventListener('scroll', (e) => { 
-            const scroll = document.documentElement.scrollTop;
-            if(scroll >= 100){
-        document.querySelector('body').classList.add('scroll')
-            } else {
-            document.querySelector('body').classList.remove('scroll')
-            }
-        });
-    </script> -->
 
 </body>
 </html>
