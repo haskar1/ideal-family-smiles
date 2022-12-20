@@ -42,8 +42,8 @@
     top: 3.75em;
     left: 0;
     right: 0;
-    bottom: 8em;
-    height: calc(100vh - 11.75em) !important;
+    bottom: 7em;
+    height: calc(100vh - 10.75em) !important;
     min-height: 0 !important;
   }
 }
