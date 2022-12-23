@@ -1,8 +1,10 @@
-remove dark mode
+change services more info descriptions
 
 change button loading circle to be async?
 
 change images on services section of home page
+
+remove dark mode
 
 make button font sizes consistent
   
@@ -14,6 +16,8 @@ change logo
 
 add cool background designs to home page, other pages? 
 
-remove gap property from footer
+remove gap property from footer, and fix layout right after 64em 
 
 update phone, email, address in footer and in contact page
+
+update reviews to be actual reviews from their location
