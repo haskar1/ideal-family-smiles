@@ -5,10 +5,10 @@
 /* Desktop */
 @media only screen and (min-width: 1025px) {
   #navigation {
-    height: 3.75em !important;
+    height: 5.5em !important;
   }
   #navigation .logo {
-    height: 2.75em !important;
+    height: 4.5em !important;
   }
 }
 
@@ -51,7 +51,8 @@
 /* Desktop */
 @media only screen and (min-width: 1025px) {
   #appointments iframe {
-    bottom: 2em;
+    /* bottom: 2em; */
+    top: 5.5em;
     height: calc(100vh - 5.75em) !important;
   }
 }
