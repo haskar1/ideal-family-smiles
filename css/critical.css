@@ -1,6 +1,7 @@
 /*-- -------------------------- -->
 <---          Landing           -->
 <--- -------------------------- -*/
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #hero {
@@ -181,9 +182,11 @@
 }
 
 
+
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #services {
@@ -285,6 +288,7 @@
     display: none;
   }
 }
+
 /* In-between */
 @media only screen and (min-width: 51em) {
   #services {
@@ -309,6 +313,7 @@
     margin-top: 2em;
   }
 }
+
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #services .container {
@@ -321,18 +326,5 @@
   #services .card:last-of-type {
     grid-column-end: span 3;
     margin-top: 0;
-  }
-}
-/* Dark mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #services {
-    background: var(--medium);
-  }
-  body.dark-mode #services picture {
-    background: var(--primaryDark);
-  }
-  body.dark-mode #services h2 {
-    color: #fff;
-    font-weight: bold;
   }
 }

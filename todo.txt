@@ -1,23 +1,31 @@
-change services more info descriptions
+Before launch:
 
-change button loading circle to be async?
+  change background images
 
-change images on services section of home page
+  change images on services section of home page
 
-remove dark mode
+  switch appointments scheduler to the business's email/name
 
-make button font sizes consistent
-  
-add other locations to about us page
+  change contact form submit email to business's email
 
-change background images
+  12/28 - change services more info descriptions
 
-change logo
+  remove gap property from footer
 
-add cool background designs to home page, other pages? 
+  change button loading circle to be async?
 
-remove gap property from footer, and fix layout right after 64em 
+  see if they added their business to google when you search address. If so, update embedded maps to say Ideal Family Smiles instead of address
 
-update phone, email, address in footer and in contact page
 
-update reviews to be actual reviews from their location
+
+
+
+After launch: 
+
+  make button font sizes consistent
+
+  remove dark mode
+
+  add cool background designs to home page, other pages? 
+
+  update reviews to be actual reviews from their location

@@ -1,7 +1,6 @@
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
@@ -119,7 +118,6 @@
     z-index: -1111111;
   }
 }
-
 /* Reset Margins */
 @media only screen and (min-width: 1025px) {
   body,
@@ -128,7 +126,6 @@
     margin: 0;
   }
 }
-
 /* Scale full website with the viewport width at very large screen sizes */
 @media only screen and (min-width: 1800px) {
   body,
@@ -136,13 +133,9 @@
     font-size: .85vw;
   }
 }
-
-
-
 /*-- -------------------------- -->
 <---         Navigation         -->
 <--- -------------------------- -*/
-
 /* Mobile - Top Drop Down */
 @media only screen and (max-width: 1024px) {
   #navigation {
@@ -332,7 +325,6 @@
             transform: translateY(0) rotateX(0);
   }
 }
-
 /* Desktop */
 @media only screen and (min-width: 1025px) {
   ::-webkit-scrollbar-track {
@@ -466,13 +458,64 @@
     display: none;
   }
 }
-
-
-
+/* Dark Mode Mobile */
+/* @media only screen and (max-width: 1023px) {
+  body.dark-mode #navigation .background-color-div {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation .hamburger-menu.clicked span {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation .hamburger-menu span {
+    background-color: #fff;
+  }
+  body.dark-mode #navigation .hamburger-menu span:before,
+  body.dark-mode #navigation .hamburger-menu span:after {
+    background-color: #fff;
+  }
+  body.dark-mode #navigation .logo .light {
+    display: block;
+  }
+  body.dark-mode #navigation .logo .dark {
+    display: none !important;
+  }
+  body.dark-mode #navigation #navbar-menu {
+    background-color: var(--medium);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a {
+    color: #fff;
+  }
+  body.dark-mode #navigation #navbar-menu ul li a:before {
+    background: var(--accent);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.active {
+    color: var(--primary);
+  }
+} */
+/* Dark Mode Desktop */
+/* @media only screen and (min-width: 1024px) {
+  body.dark-mode #navigation .background-color-div {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation .logo .light {
+    display: block;
+  }
+  body.dark-mode #navigation .logo .dark {
+    display: none !important;
+  }
+  body.dark-mode #navigation #navbar-menu ul li a {
+    color: #fff;
+  }
+  body.dark-mode #navigation #navbar-menu ul li a:before {
+    background: var(--accent);
+  }
+  body.dark-mode #navigation #navbar-menu ul li a.active {
+    color: var(--primary);
+  }
+} */
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
-
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #int-hero {
@@ -544,7 +587,6 @@
     width: 96%;
   }
 }
-
 /* Tablet */
 @media only screen and (min-width: 48em) {
   #int-hero {
@@ -554,7 +596,6 @@
     font-size: 4em;
   }
 }
-
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #int-hero {
@@ -567,13 +608,9 @@
     font-size: inherit;
   }
 }
-
-
-
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
-
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #footer {
@@ -581,8 +618,14 @@
     padding: 5.25em 0 1.25em;
     font-size: min(6vw, 1.2em);
   }
+  #footer .logo-wrapper {
+    margin: auto;
+    margin-bottom: 3.125em;
+    text-align: center;
+  }
   #footer .logo {
     display: inline-block;
+    margin: auto;
     width: auto;
     height: 6em;
   }
@@ -591,26 +634,18 @@
     height: 100%;
     display: block;
   }
-  #footer .container {
+  #footer .lists {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 4em;
-  }
-  #footer .container > * {
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
-    margin-top: 0;
-    margin-bottom: 4em;
-    padding: 0 2em;
+    margin-bottom: 2em;
+    margin-left: -3em;
+  }
+  #footer .lists > * {
+    text-align: center;
+    margin-bottom: 3em;
+    margin-left: 3em;
   }
   #footer li {
     list-style: none;
@@ -618,14 +653,13 @@
     color: #fff;
     font-size: min(5.5vw, 1.2rem);
     opacity: .9;
-    white-space: nowrap;
   }
   #footer li a {
     text-decoration: none;
     color: #fff;
     line-height: 1.16666667;
     -webkit-transition: color .3s;
-            transition: color .3s;
+    transition: color .3s;
     font-size: min(5.5vw, 1.2rem);
   }
   #footer li a:hover, 
@@ -673,6 +707,7 @@
     margin-bottom: 0.88888889em;
   }
   #footer .credit {
+    color: #fff;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -690,17 +725,33 @@
   }
   #footer .credit .copyright {
     display: block;
-    font-size: 0.8em;
-    color: #fff;
-  }
-  #footer .credit .copyright span {
-    white-space: nowrap;
+    font-size: 1em;
   }
 }
-
+@media only screen and (min-width: 600px) {
+  #footer .footer--links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+  }
+  #footer .footer--links li {
+    margin-right: 1.5em;
+  }
+  #footer .footer--links li:last-of-type {
+    margin-right: 0;
+  }
+}
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: justify;
@@ -710,6 +761,21 @@
     max-width: 80em;
     margin: auto;
     padding: 0;
+  }
+  #footer .logo-wrapper {
+    width: 40%;
+    margin: 0;
+    text-align: right;
+  }
+  #footer .logo {
+    text-align: left;
+    margin-left: 0;
+    height: 7em;
+  }
+  #footer .lists {
+    width: 96%;
+    margin: 0;
+    font-size: 1.25em;
   }
   #footer li a {
     position: relative;
@@ -737,21 +803,16 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  #footer .footer--links ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #footer .footer--links li {
-    margin-right: 1.5em;
-  }
-  #footer .footer--links li:last-of-type {
-    margin-right: 0;
-  }
   #footer .credit {
     margin-top: 15.25em;
   }
   #footer .credit .copyright {
     display: inline-block;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #footer {
+    background: #061623;
   }
 }
