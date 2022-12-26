@@ -137,22 +137,34 @@
     margin-bottom: 0.75em;
   }
   #office .contact-info {
+    margin: auto;
     margin-bottom: 4em;
+    max-width: 23.1875em;
   }
   #office .contact-info a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    max-width: 100%;
-    font-size: min(6vw, 1.25em);
-    margin: auto;
-    margin-bottom: 0.75em;
-    padding: 0.15em 0.5em;
     text-decoration: none;
   }
-  #office .address:hover, 
-  #office .address:focus {
+  #office .contact-info .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: min(5vw, 1.25rem);
+    margin-bottom: 0.75em;
+    padding: 0.15em 0.5em;
+  }
+  #office .contact-info .flex > *:first-child {
+    width: 30%;
+    font-weight: 700;
+  }
+  #office .contact-info .flex > *:last-child {
+    width: 65%;
+    text-align: left;
+  }
+  #office a:hover, 
+  #office a:focus {
     text-decoration: underline;
   }
   #office .address img {
@@ -160,7 +172,6 @@
   }
   #office .phone img {
     width: 2em;
-    margin-right: 1em;
   }
   #office iframe {
     max-width: 90%;
@@ -205,6 +216,12 @@
   #office .contact-info.other-offices:last-of-type {
     margin-bottom: 0;
   }
+  #office .contact-info.other-offices > .flex > .img-wrapper {
+    text-align: right;
+  }
+  #office .contact-info.other-offices > .phone.flex > .img-wrapper {
+    padding-right: 0.5em;
+  }
 }
 
 /* Small Desktop */
@@ -214,25 +231,21 @@
     padding: 7em 0 4em;
   }
   #office .content {
-    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: center;
+            justify-content: space-evenly;
     margin-bottom: 6em;
   }
   #office .content.other-offices {
     margin-bottom: 0;
   }
   #office .contact-info {
+    flex: 1;
     align-self: center;
-    margin-bottom: 0;
-    margin-right: 6em;
-  }
-  #office .contact-info.other-offices:first-of-type {
-    margin-right: 12em;
-  }
-  #office .contact-info.other-offices:last-of-type {
-    margin-right: 0;
+    margin: 0;
   }
   #office iframe {
     margin: 0;
@@ -242,13 +255,11 @@
   }
 }
 
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #office .contact-info {
-    margin-right: 10em;
-  }
-  #office .contact-info.other-offices:first-of-type {
-    margin-right: 16em;
+/* Very Large Desktop */
+@media only screen and (min-width: 1800px) {
+  #office iframe {
+    width: 40%;
+    height: auto;
   }
 }
 

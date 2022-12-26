@@ -1,5 +1,7 @@
 Before launch:
 
+  fix mobile nav spacing above home tab
+  
   change background images
 
   change images on services section of home page
@@ -9,8 +11,6 @@ Before launch:
   change contact form submit email to business's email
 
   12/28 - change services more info descriptions
-
-  remove gap property from footer
 
   change button loading circle to be async?
 
