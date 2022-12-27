@@ -1,7 +1,5 @@
 Before launch:
 
-  fix mobile nav spacing above home tab
-
   change background images
 
   change images on services section of home page
@@ -18,7 +16,9 @@ Before launch:
 
   remove ability on mobile to right click landing image when you hold down on it
 
+  add popup notification on appointments page that warns patients that appointment isn't confirmed until office confirms it
 
+  change primary color from yellow to carolina blue
 
 
 
@@ -31,3 +31,5 @@ After launch:
   add cool background designs to home page, other pages? 
 
   update reviews to be actual reviews from their location
+
+  fix mobile navbar menu overflow landscape view

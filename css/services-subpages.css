@@ -266,15 +266,6 @@
     transform: translateX(-50%);
     z-index: -3;
   }
-  #cta .container {
-    width: 90.0625%;
-    margin: auto;
-  }
-  #cta picture {
-    width: 90.0625%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   #cta picture:before {
     content: '';
     position: absolute;

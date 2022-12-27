@@ -273,7 +273,7 @@
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #fff;
-    top: 3.73375em;
+    top: 5.0625em;
     padding-top: 0;
     height: 0;
     -webkit-transition: height 0.3s, padding-top 0.3s, top 0.3s;
@@ -501,7 +501,7 @@
     height: 100%;
     width: 100%;
     background: #000;
-    opacity: .7;
+    opacity: .3;
     top: 0;
     left: 0;
     z-index: -1;
