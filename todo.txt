@@ -1,7 +1,7 @@
 Before launch:
 
   fix mobile nav spacing above home tab
-  
+
   change background images
 
   change images on services section of home page
@@ -15,6 +15,8 @@ Before launch:
   change button loading circle to be async?
 
   see if they added their business to google when you search address. If so, update embedded maps to say Ideal Family Smiles instead of address
+
+  remove ability on mobile to right click landing image when you hold down on it
 
 
 
