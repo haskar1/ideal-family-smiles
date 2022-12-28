@@ -5,10 +5,11 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #FFBA19;
+    --primary: #569fde9e;
     --primaryShade: #ffd675;
     --primaryDark: #805d0d;
     --bodyText: #1a1a1a;
+    --btn: #FFBA19;
   }
   /* roboto-regular - latin */
   @font-face {
@@ -101,7 +102,7 @@
     border-radius: 6px;
     position: relative;
     z-index: 1;
-    background-color: var(--primary);
+    background-color: var(--btn);
     color: #000;
     -webkit-transition: color .2s, outline .2s;
     transition: color .2s, outline .2s;
