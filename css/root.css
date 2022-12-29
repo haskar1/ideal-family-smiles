@@ -5,11 +5,12 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #569fde9e;
+    --primary: #569fdecf;
     --primaryShade: #ffd675;
     --primaryDark: #805d0d;
     --bodyText: #1a1a1a;
-    --btn: #FFBA19;
+    --btn: #001e7e;
+    /* --btn: #FFBA19; */
   }
   /* roboto-regular - latin */
   @font-face {
@@ -103,7 +104,8 @@
     position: relative;
     z-index: 1;
     background-color: var(--btn);
-    color: #000;
+    /* color: #000; */
+    color: white;
     -webkit-transition: color .2s, outline .2s;
     transition: color .2s, outline .2s;
   }

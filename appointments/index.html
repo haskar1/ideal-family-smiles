@@ -91,10 +91,21 @@
 
     <main id="main">
 
+        <!-- Popup alert to let users know that appointments
+             are not official until confirmed by office  -->
+        
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <br><p>Appointments are not scheduled until confirmed by office.</p><br>
+                <p>You will be notified if your appointment is confirmed or not.</p>
+            </div>
+        </div>
+
         <!-- ============================================ -->
         <!--                  APPOINTMENTS                -->
         <!-- ============================================ -->
-    
+
         <section id="appointments">
             <div class="appointment-scheduler-wrapper">
                 <div class="loading-wrapper">
@@ -111,7 +122,7 @@
 
     </main>
 
-
+    <script defer src="../appointments.js"></script>
     <script defer src="../nav.js"></script>
     <!-- <script defer src="./dark.js"></script> -->
     <script defer src="../loading-button.js"></script>

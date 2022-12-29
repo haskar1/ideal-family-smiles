@@ -1,24 +1,14 @@
 Before launch:
 
-  change background images
-
-  change images on services section of home page
-
   switch appointments scheduler to the business's email/name
 
   change contact form submit email to business's email
-
-  12/28 - change services more info descriptions
 
   change button loading circle to be async?
 
   see if they added their business to google when you search address. If so, update embedded maps to say Ideal Family Smiles instead of address
 
   remove ability on mobile to right click landing image when you hold down on it
-
-  add popup notification on appointments page that warns patients that appointment isn't confirmed until office confirms it
-
-  change primary color from yellow to carolina blue
 
 
 
@@ -33,3 +23,6 @@ After launch:
   update reviews to be actual reviews from their location
 
   fix mobile navbar menu overflow landscape view
+
+  change services more info descriptions
+
