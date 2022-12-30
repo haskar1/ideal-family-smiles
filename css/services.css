@@ -80,7 +80,16 @@
     margin: 2em auto;
     line-height: normal;
     font-size: min(4.6vw, 1em);
+    background-color: white;
+    color: var(--blue-btn);
   }
+
+  #services .slide .button-solid:hover {
+    background-color: white;
+    color: var(--blue-btn);
+    opacity: .7;
+  }
+
   #services .emergency-dentistry .button-solid {
     font-size: min(5vw, 1.2em);
   }

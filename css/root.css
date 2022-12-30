@@ -9,7 +9,8 @@
     --primaryShade: #ffd675;
     --primaryDark: #805d0d;
     --bodyText: #1a1a1a;
-    --btn: #001e7e;
+    --blue-btn: #0074b7;
+    --blue-btn-hover: #005194;
     /* --btn: #FFBA19; */
   }
   /* roboto-regular - latin */
@@ -103,16 +104,12 @@
     border-radius: 6px;
     position: relative;
     z-index: 1;
-    background-color: var(--btn);
-    /* color: #000; */
+    background-color: var(--blue-btn);
     color: white;
-    -webkit-transition: color .2s, outline .2s;
-    transition: color .2s, outline .2s;
   }
   .button-solid:hover,
   .button-solid:focus {
-    color: rgb(98, 97, 97);
-    outline: rgb(98, 97, 97) solid 3px;
+    background-color: var(--blue-btn-hover);
   }
   .skip {
     position: absolute;

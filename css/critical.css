@@ -89,6 +89,16 @@
     margin: auto;
     display: inline-block;
     width: auto;
+    background-color: white;
+    color: var(--blue-btn);
+    outline: 0.2em solid var(--blue-btn);
+    outline-offset: -0.4em;
+  }
+  #hero .button-solid:hover,
+  #hero .button-solid:focus {
+    background-color: white;
+    color: var(--blue-btn);
+    opacity: .7;
   }
   .svg-wavy-container svg {
     width: 100%;
