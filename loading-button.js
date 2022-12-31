@@ -10,9 +10,9 @@ const buttons = document.querySelectorAll('.button-solid');
       }
     };
 
-    toggleLoadingCircle(e);
-  
-    setTimeout(toggleLoadingCircle, 90000, e);
+    toggleLoadingSpinner(e);
+
+    deactivateLoadingSpinnerOnPageLeave(e);
   })
 });
 
@@ -32,7 +32,7 @@ function checkFormIsValid() {
 }
 
 
-function toggleLoadingCircle(e) {
+function toggleLoadingSpinner(e) {
   const loader = e.target.querySelector('.lds-ring');
   const loaderDivChildren = e.target.querySelectorAll('.lds-ring div');
 
@@ -40,6 +40,15 @@ function toggleLoadingCircle(e) {
     loader.classList.toggle('active');
     [...loaderDivChildren].forEach(child => child.classList.toggle('active'));
   }
+}
+
+
+function deactivateLoadingSpinnerOnPageLeave(e) {
+  document.onvisibilitychange = () => {
+    if (document.visibilityState === 'hidden') {
+      toggleLoadingCircle(e);
+    }
+  };
 }
 
 

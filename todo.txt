@@ -10,6 +10,7 @@ Before launch:
 
   remove ability on mobile to right click landing image when you hold down on it
 
+  change all the link rel="canonical" to actual site's link
 
 
 After launch: 

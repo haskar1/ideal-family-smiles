@@ -82,6 +82,7 @@
     font-size: min(4.6vw, 1em);
     background-color: white;
     color: var(--blue-btn);
+    border: 0.2em solid var(--blue-btn);
   }
 
   #services .slide .button-solid:hover {
