@@ -43,7 +43,7 @@
 </head>
 <body>
     <!--Screen reader skip main nav-->
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+    <a draggable="false" class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
     <!-- ============================================ -->
     <!--                 Navigation                   -->
@@ -57,29 +57,29 @@
             -->
         </div>
         <div class="container">
-            <a class="logo" aria-label="click to go to home page" href="../">
-                <img aria-hidden="true" src="../images/logo.png" decoding="async" alt="logo" width="623" height="321">
+            <a draggable="false" class="logo" aria-label="click to go to home page" href="../">
+                <img draggable="false" oncontextmenu="return false;" aria-hidden="true" src="../images/logo.png" decoding="async" alt="logo" width="623" height="321">
             </a>
 
-            <a class="phone" href="tel:703-570-4800">
-                <img src="../images/phone-symbol.svg" alt="phone symbol">
+            <a draggable="false" class="phone" href="tel:703-570-4800">
+                <img draggable="false" oncontextmenu="return false;" src="../images/phone-symbol.svg" alt="phone symbol">
             </a>
 
             <!--Main Nav-->
             <nav id="navbar-menu">
                 <ul>
-                    <li><a href="../">Home</a></li>
-                    <li><a href="../about/">About Us</a></li>
-                    <li><a class="active" href="./">Services</a></li>
-                    <li><a href="../appointments/">Appointments</a></li>
-                    <li><a href="../contact/">Contact</a></li>
+                    <li><a draggable="false" href="../">Home</a></li>
+                    <li><a draggable="false" href="../about/">About Us</a></li>
+                    <li><a draggable="false" class="active" href="./">Services</a></li>
+                    <li><a draggable="false" href="../appointments/">Appointments</a></li>
+                    <li><a draggable="false" href="../contact/">Contact</a></li>
                 </ul>
             </nav>
 
             <!--Dark Mode toggle-->
             <!-- <button id="dark-mode-toggle">
                 <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-                <img class="sun" aria-hidden="true" src="./images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+                <img draggable="false" oncontextmenu="return false;" class="sun" aria-hidden="true" src="./images/sun.svg" decoding="async" alt="moon" width="15" height="15">
             </button> -->
 
             <!--Mobile Nav toggle-->
@@ -101,7 +101,7 @@
                 <source media="(max-width: 640px)" srcset="../images/landing-other-m.webp">
                 <source media="(max-width: 640px)" srcset="../images/landing-other-m.jpg">
                 <source media="(min-width: 641px)" srcset="../images/landing-other.webp">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="../images/landing-other.jpg" alt="blue and white wavy pattern" width="1920" height="1280">
+                <img draggable="false" oncontextmenu="return false;" aria-hidden="true" loading="lazy" decoding="async" src="../images/landing-other.jpg" alt="blue and white wavy pattern" width="1920" height="1280">
              </picture>
         </section>
 
@@ -115,8 +115,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Composite Dental Bonding</span></div>
                         <div class="slide">
-                            <p>Composite bonding is one of the simplest procedures that cosmetic dentists use to correct the look of teeth.<!--  <a class="more-info" href="./composite-dental-bonding/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Composite bonding is one of the simplest procedures that cosmetic dentists use to correct the look of teeth.<!--  <a draggable="false" class="more-info" href="./composite-dental-bonding/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -130,8 +130,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Bridges</span></div>
                         <div class="slide">
-                            <p>A dental bridge can help if you have a missing tooth or teeth. A bridge fills in the gap and helps restore your bite, smile and oral health.<!--  <a class="more-info" href="./bridges/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>A dental bridge can help if you have a missing tooth or teeth. A bridge fills in the gap and helps restore your bite, smile and oral health.<!--  <a draggable="false" class="more-info" href="./bridges/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -145,8 +145,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Cleanings And Exams</span></div>
                         <div class="slide">
-                            <p>For cleanings we take an exam of your mouth, then we remove sticky plaque and hard tartar deposits from your teeth.<!--  <a class="more-info" href="./cleanings/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>For cleanings we take an exam of your mouth, then we remove sticky plaque and hard tartar deposits from your teeth.<!--  <a draggable="false" class="more-info" href="./cleanings/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -160,8 +160,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Crowns</span></div>
                         <div class="slide">
-                            <p>Crowns are used to cover and protect the shape of your teeth when fillings don’t solve the problem.<!--  <a class="more-info" href="./crowns/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Crowns are used to cover and protect the shape of your teeth when fillings don’t solve the problem.<!--  <a draggable="false" class="more-info" href="./crowns/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -175,8 +175,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Fillings</span></div>
                         <div class="slide">
-                            <p>Fillings are used to treat a small hole, or cavity in a tooth. We remove decayed tooth tissue and fill it with material.<!--  <a class="more-info" href="./fillings/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Fillings are used to treat a small hole, or cavity in a tooth. We remove decayed tooth tissue and fill it with material.<!--  <a draggable="false" class="more-info" href="./fillings/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -190,8 +190,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Implants</span></div>
                         <div class="slide">
-                            <p>Do you have missing teeth? Dental implants are a long-term solution for restoring your smile!<!--  <a class="more-info" href="./implants/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Do you have missing teeth? Dental implants are a long-term solution for restoring your smile!<!--  <a draggable="false" class="more-info" href="./implants/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -205,8 +205,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Veneers</span></div>
                         <div class="slide">
-                            <p>Are your teeth cracked, chipped, have stains or other imperfections? Dental Veneers can give you the smile you're looking for!<!--  <a class="more-info" href="./veneers/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Are your teeth cracked, chipped, have stains or other imperfections? Dental Veneers can give you the smile you're looking for!<!--  <a draggable="false" class="more-info" href="./veneers/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -220,8 +220,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Dentures</span></div>
                         <div class="slide">
-                            <p>We create high quality dentures customized for you to regain confidence in your smile! Call us to learn more!<!--  <a class="more-info" href="./dentures/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>We create high quality dentures customized for you to regain confidence in your smile! Call us to learn more!<!--  <a draggable="false" class="more-info" href="./dentures/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -235,8 +235,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Digital X-Rays</span></div>
                         <div class="slide">
-                            <p>We use digital X-ray sensors to produce enhanced computer images of teeth, gums, and other oral structures and conditions.<!--  <a class="more-info" href="./digital-xrays/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>We use digital X-ray sensors to produce enhanced computer images of teeth, gums, and other oral structures and conditions.<!--  <a draggable="false" class="more-info" href="./digital-xrays/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -250,8 +250,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Emergency Dentistry</span></div>
                         <div class="slide emergency-dentistry">
-                            <p>Having a dental emergency? We can help! Call our office right away.<!--  <a class="more-info" href="./emergency-dentistry/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="tel:703-570-4800" tabindex="-1">
+                            <p>Having a dental emergency? We can help! Call our office right away.<!--  <a draggable="false" class="more-info" href="./emergency-dentistry/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="tel:703-570-4800" tabindex="-1">
                                 703-570-4800
                             </a>
                         </div>
@@ -259,8 +259,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Fluoride Treatments</span></div>
                         <div class="slide">
-                            <p>Fluoride treatments can be applied to your teeth to improve health and reduce the risk of cavities.<!--  <a class="more-info" href="./fluoride-treatments/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Fluoride treatments can be applied to your teeth to improve health and reduce the risk of cavities.<!--  <a draggable="false" class="more-info" href="./fluoride-treatments/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -274,8 +274,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Invisalign® Clear Aligners</span></div>
                         <div class="slide">
-                            <p>Tired of metal braces? We can fit you with Invisalign®, a clear braces alternative.<!--  <a class="more-info" href="./invisalign/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Tired of metal braces? We can fit you with Invisalign®, a clear braces alternative.<!--  <a draggable="false" class="more-info" href="./invisalign/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -289,8 +289,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Root Canal Therapy</span></div>
                         <div class="slide">
-                            <p>Have an infected or damaged tooth? We perform root canals to save your tooth instead of removing it.<!--  <a class="more-info" href="./root-canals/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Have an infected or damaged tooth? We perform root canals to save your tooth instead of removing it.<!--  <a draggable="false" class="more-info" href="./root-canals/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -304,8 +304,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Teeth Whitening</span></div>
                         <div class="slide">
-                            <p>We offer teeth whitening as an effective way of lightening the natural color of your teeth without removing any of the tooth surface.<!--  <a class="more-info" href="./teeth-whitening/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>We offer teeth whitening as an effective way of lightening the natural color of your teeth without removing any of the tooth surface.<!--  <a draggable="false" class="more-info" href="./teeth-whitening/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -319,8 +319,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Tooth Extractions</span></div>
                         <div class="slide">
-                            <p>Tooth extractions may be recommended to remove teeth that have become unrestorable through tooth decay, periodontal disease, or dental trauma.<!--  <a class="more-info" href="./extractions/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Tooth extractions may be recommended to remove teeth that have become unrestorable through tooth decay, periodontal disease, or dental trauma.<!--  <a draggable="false" class="more-info" href="./extractions/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -334,8 +334,8 @@
                     <li>
                         <div class="span-wrapper"><span tabindex="0">Wisdom Teeth Removal</span></div>
                         <div class="slide">
-                            <p>Wisdom teeth removal may be recommended, especially if they are painful, become infected, cause damage to other teeth, or show signs of decay.<!--  <a class="more-info" href="./wisdom-teeth-removal/" tabindex="-1">More info</a> --></p>
-                            <a class="button-solid" href="../appointments/" tabindex="-1">
+                            <p>Wisdom teeth removal may be recommended, especially if they are painful, become infected, cause damage to other teeth, or show signs of decay.<!--  <a draggable="false" class="more-info" href="./wisdom-teeth-removal/" tabindex="-1">More info</a> --></p>
+                            <a draggable="false" class="button-solid" href="../appointments/" tabindex="-1">
                                 Request Appointment
                                 <div class="lds-ring">
                                     <div></div>
@@ -360,7 +360,7 @@
                 <p>
                     Begin your journey towards a beautiful smile!
                 </p>
-                <a href="../appointments/" class="button-solid">
+                <a draggable="false" href="../appointments/" class="button-solid">
                     Request Appointment
                     <div class="lds-ring">
                         <div></div>
@@ -374,7 +374,7 @@
                 <source media="(max-width: 640px)" srcset="../images/cta-m.webp">
                 <source media="(max-width: 640px)" srcset="../images/cta-m.jpg">
                 <source media="(min-width: 641px)" srcset="../images/cta.webp">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="../images/cta.jpg" alt="plastic teeth" width="1920" height="1280">
+                <img draggable="false" oncontextmenu="return false;" aria-hidden="true" loading="lazy" decoding="async" src="../images/cta.jpg" alt="plastic teeth" width="1920" height="1280">
              </picture>
         </section>
 
@@ -386,7 +386,7 @@
 
     <footer id="footer">
         <div class="container">
-            <a class="logo" href="../"><img loading="lazy" decoding="async" src="../images/logo.png" alt="logo" width="623" height="321"></a>
+            <a draggable="false" class="logo" href="../"><img draggable="false" oncontextmenu="return false;" loading="lazy" decoding="async" src="../images/logo.png" alt="logo" width="623" height="321"></a>
             <div class="footer--hours">
                 <h2>Hours</h2>
                 <ul>
@@ -402,19 +402,19 @@
             <div class="footer--contact">
                 <h2>Contact</h2>
                 <ul>
-                    <li><a href="https://goo.gl/maps/zGCPGwX8ixE2XvPC6">8622 Lee Hwy, Unit D<br>Fairfax, VA 22031</a></li>
-                    <li><a href="tel:703-570-4800">(703) 570-4800</a></li>
-                    <li><a href="mailto:idealfamilysmiles@outlook.com">idealfamilysmiles@outlook.com</a></li>
+                    <li><a draggable="false" href="https://goo.gl/maps/zGCPGwX8ixE2XvPC6">8622 Lee Hwy, Unit D<br>Fairfax, VA 22031</a></li>
+                    <li><a draggable="false" href="tel:703-570-4800">(703) 570-4800</a></li>
+                    <li><a draggable="false" href="mailto:idealfamilysmiles@outlook.com">idealfamilysmiles@outlook.com</a></li>
                 </ul>
             </div>
             <div class="footer--links">
                 <h2>Links</h2>
                 <ul>
-                    <li><a href="../">Home</a></li>
-                    <li><a href="../about/">About Us</a></li>
-                    <li><a href="./">Services</a></li>
-                    <li><a href="../appointments/">Appointments</a></li>
-                    <li><a href="../contact/">Contact</a></li>
+                    <li><a draggable="false" href="../">Home</a></li>
+                    <li><a draggable="false" href="../about/">About Us</a></li>
+                    <li><a draggable="false" href="./">Services</a></li>
+                    <li><a draggable="false" href="../appointments/">Appointments</a></li>
+                    <li><a draggable="false" href="../contact/">Contact</a></li>
                 </ul>
             </div>
         </div>

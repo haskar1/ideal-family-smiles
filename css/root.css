@@ -118,6 +118,12 @@
     opacity: 0;
     z-index: -1111111;
   }
+  img {
+    -webkit-user-select: none; /* Safari, Chrome */
+    -ms-user-select: none; /* IE 10+, Edge */
+    -moz-user-select: none; /* Firefox */
+    user-select: none;
+  }
 }
 
 /* Reset Margins */

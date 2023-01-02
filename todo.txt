@@ -4,8 +4,6 @@ Before launch:
 
   change contact form submit email to business's email
 
-  change button loading circle to be async?
-
   see if they added their business to google when you search address. If so, update embedded maps to say Ideal Family Smiles instead of address
 
   remove ability on mobile to right click landing image when you hold down on it
@@ -30,4 +28,5 @@ After launch:
   fix mobile navbar menu overflow landscape view
 
   change services more info descriptions
-
+  
+  change button loading circle to be async?

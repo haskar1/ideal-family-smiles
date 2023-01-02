@@ -8,6 +8,8 @@ const buttons = document.querySelectorAll('.button-solid');
       if (!checkFormIsValid()) {
         return
       }
+      
+      toggleLoadingSpinner(e);
     };
 
     // toggleLoadingSpinner(e);
