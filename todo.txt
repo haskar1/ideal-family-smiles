@@ -12,6 +12,10 @@ Before launch:
 
   change all the link rel="canonical" to actual site's link
 
+  make section titles white color with blue background
+
+  hide reviews section until actual reviews are available
+
 
 After launch: 
 

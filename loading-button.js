@@ -10,9 +10,8 @@ const buttons = document.querySelectorAll('.button-solid');
       }
     };
 
-    toggleLoadingSpinner(e);
+    // toggleLoadingSpinner(e);
 
-    deactivateLoadingSpinnerOnPageLeave(e);
   })
 });
 
@@ -42,14 +41,6 @@ function toggleLoadingSpinner(e) {
   }
 }
 
-
-function deactivateLoadingSpinnerOnPageLeave(e) {
-  document.onvisibilitychange = () => {
-    if (document.visibilityState === 'hidden') {
-      toggleLoadingCircle(e);
-    }
-  };
-}
 
 
 // "View More Services" button to expand services list

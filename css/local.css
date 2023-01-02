@@ -1,46 +1,48 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---          Staff             -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #sidebyside {
+  #staff {
     margin-bottom: 8em;
   }
-  #sidebyside .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  #staff .title {
+    font-size: min(12vw, 3em);
+    text-align: center;
   }
-  #sidebyside .content {
-    order: 2;
+  #staff .content {
+    padding-top: 6em;
+    text-align: center;
+  }
+  #staff .content + .content {
+    padding-top: 8em;
+  }
+  #staff .content .description {
     margin: auto;
     margin-top: 4.6875em;
     width: 90%;
     max-width: 45em;
-    text-align: center;
   }
-  #sidebyside .content h2 {
-    font-size: min(8vw, 3em);
-    margin-bottom: 1.25em;
-    text-align: center;
+  #staff .content h2 {
+    margin-bottom: 1em;
+    font-size: min(8vw, 2em);
   }
-  #sidebyside .content p {
+  #staff .content p {
     font-size: min(5vw, 1.5em);
     text-align: left;
     padding-left: min(5vw, 1.5em);
     margin-bottom: 2em;
   }
-  #sidebyside .image-box {
+  #staff picture {
     display: block;
     position: relative;
     margin: auto;
     width: 20em;
     height: 28em;
-    font-size: min(3vw, 1em);
+    font-size: min(3vw, 0.7em);
   }
-  #sidebyside .image-box:before {
+  #staff picture:before {
     content: '';
     position: absolute;
     display: block;
@@ -51,7 +53,7 @@
     top: 2.5em;
     left: -2.5em;
   }
-  #sidebyside .image-box:after {
+  #staff picture:after {
     content: '';
     position: absolute;
     display: block;
@@ -66,7 +68,7 @@
     right: -2.5em;
     z-index: -1;
   }
-  #sidebyside .image-box img {
+  #staff picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,28 +78,26 @@
   }
 }
 
-@media only screen and (min-width: 900px) {
-  #sidebyside {
+/* In-between */
+@media only screen and (min-width: 64em) {
+  #staff {
     margin-bottom: 10em;
   }
-  #sidebyside .container {
-    max-width: 86.9375em;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  #staff .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-evenly;
+    max-width: 75em;
   }
-  #sidebyside .content {
-    margin: auto;
-    margin-right: 0;
-    width: 50%;
-    max-width: 50em;
-    text-align: left;
+  #staff .content .description {
+    width: 80%;
+    max-width: 35em;
   }
-  #sidebyside .content h2 {
-    text-align: left;
-  }
-  #sidebyside .content p {
-    padding-left: 0;
+  #staff .content + .content {
+    padding-top: 6em;
   }
 }
 
@@ -163,8 +163,10 @@
     width: 65%;
     text-align: left;
   }
-  #office a:hover, 
-  #office a:focus {
+  #office .office-name:hover,
+  #office .office-name:focus, 
+  #office .address:hover, 
+  #office .address:focus {
     text-decoration: underline;
   }
   #office .address img {

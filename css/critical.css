@@ -17,7 +17,7 @@
     height: 100%;
     width: 100%;
     background: #1d7fd5;
-    opacity: .8;
+    opacity: .85;
     top: 0;
     left: 0;
     z-index: -10;
@@ -122,9 +122,9 @@
   
     z-index: 1;
     
-    -webkit-box-shadow: 0px -25px 72px 20px rgba(71,145,209,1);
-      -moz-box-shadow: 0px -25px 72px 20px rgba(71,145,209,1);
-      box-shadow: 0px -25px 72px 20px rgba(71,145,209,1);
+    -webkit-box-shadow: 0px -25px 72px 30px rgba(71,145,209,1);
+      -moz-box-shadow: 0px -25px 72px 30px rgba(71,145,209,1);
+      box-shadow: 0px -25px 72px 30px rgba(71,145,209,1);
   }
   .svg-wavy-container .white-background {
     position: relative;
@@ -160,6 +160,7 @@
 /* Tablet */
 @media only screen and (min-width: 48em) {
   #hero {
+    padding-top: 10em;
     z-index: 1;
     overflow: hidden;
   }
@@ -174,6 +175,9 @@
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
+  #hero {
+    padding-top: 8em;
+  }
   #hero:before {
     background: linear-gradient(to bottom, #1d7fd5, #1d7fd5 10%, transparent 30%, transparent 80%, #1d7fd5 90%),
                 linear-gradient(to right, #1d7fd5, #1d7fd5 60%, transparent 85%);
@@ -204,7 +208,7 @@
   }
   #services .title {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     font-size: min(15vw, 3em);
   }
   /* #services {

@@ -29,56 +29,57 @@
 }
 
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---          Staff             -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #sidebyside {
+  #staff {
     margin-bottom: 4em;
   }
-  #sidebyside .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  #staff .title {
+    font-size: min(12vw, 3em);
+    text-align: center;
+  }
+  #staff .container {
     width: 90%;
     max-width: 65em;
+    padding-top: 5.5em;
   }
-  #sidebyside .content {
+  #staff .content {
     margin: auto;
     margin-top: 4.6875em;
     text-align: center;
   }
-  #sidebyside .content h2 {
-    font-size: min(8vw, 3em);
-    margin-bottom: 1.25em;
-    text-align: center;
+  #staff .content h2 {
+    margin-bottom: 1em;
+    font-size: min(8vw, 2em);
   }
-  #sidebyside .content p {
+  #staff .content p {
     font-size: min(5vw, 1.5em);
     text-align: left;
     padding-left: min(5vw, 1.5em);
     margin-bottom: 1.75em;
     line-height: 2em;
   }
-  #sidebyside .content .bio a {
+  #staff .content .bio a {
     text-decoration: none;
     font-size: 1em;
     color: black;
     font-weight: 500;
   }
-  #sidebyside .content .bio a:hover, 
-  #sidebyside .content .bio a:focus {
+  #staff .content .bio a:hover, 
+  #staff .content .bio a:focus {
     opacity: 0.7;
   }
-  #sidebyside .image-box {
+  #staff picture {
     display: block;
     position: relative;
+    margin: auto;
     width: 20em;
     height: 28em;
-    font-size: min(3vw, 1em);
+    font-size: min(3vw, 0.7em);
   }
-  #sidebyside .image-box:before {
+  #staff picture:before {
     content: '';
     position: absolute;
     display: block;
@@ -89,7 +90,7 @@
     top: 2.5em;
     left: -2.5em;
   }
-  #sidebyside .image-box:after {
+  #staff picture:after {
     content: '';
     position: absolute;
     display: block;
@@ -104,7 +105,7 @@
     right: -2.5em;
     z-index: -1;
   }
-  #sidebyside .image-box img {
+  #staff picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -115,23 +116,22 @@
 }
 /* Inbetween */
 @media only screen and (min-width: 900px) {
-  #sidebyside {
+  #staff {
     margin-bottom: 8em;
   }
-  #sidebyside .container {
-    display: block;
+  #staff .content {
+    margin-top: 0;
   }
-  #sidebyside .content h2 {
+  #staff .content h2 {
     text-align: left;
-    padding-top: 1em;
   }
-  #sidebyside .content p {
+  #staff .content p {
     padding-left: 0;
   }
-  #sidebyside .image-box {
+  #staff picture {
     float: left;
-    margin-right: 5em;
-    margin-bottom: 5em;
+    margin-right: 10em;
+    margin-bottom: 4em;
   }
 }
 
