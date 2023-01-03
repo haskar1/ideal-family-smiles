@@ -6,13 +6,11 @@ Before launch:
 
   see if they added their business to google when you search address. If so, update embedded maps to say Ideal Family Smiles instead of address
 
-  remove ability on mobile to right click landing image when you hold down on it
-
-  change all the link rel="canonical" to actual site's link
-
   make section titles white color with blue background
 
   hide reviews section until actual reviews are available
+
+  add accessibility to nav menu 
 
 
 After launch: 
@@ -28,5 +26,5 @@ After launch:
   fix mobile navbar menu overflow landscape view
 
   change services more info descriptions
-  
+
   change button loading circle to be async?
