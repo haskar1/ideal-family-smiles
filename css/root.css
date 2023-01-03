@@ -406,7 +406,7 @@
   }
   #navigation .logo {
     margin-right: auto;
-    height: 4.5em;
+    height: 4em;
     width: auto;
   }
   #navigation .logo img {
@@ -646,6 +646,11 @@
   #footer li a:hover, 
   #footer li a:focus {
     color: var(--primary);
+  }
+  #footer li p {
+    color: #fff;
+    font-size: min(5.5vw, 1.2rem);
+    line-height: 1.16666667;
   }
   #footer h2 {
     color: #fff;

@@ -103,7 +103,7 @@
   }
   #form .contact-right .heading {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 1.2em;
     font-weight: bold;
     padding-left: 0.83333333em;
@@ -118,7 +118,7 @@
     margin-bottom: 0;
   }
   #form .contact-right .info {
-    font-size: 1em;
+    font-size: 1.2rem;
     line-height: 1.75;
     color: #fff;
     opacity: .9;
@@ -142,9 +142,6 @@
   #form .contact-right .info-group {
     width: 40%;
     margin-left: 3.125em;
-  }
-  #form .contact-right .info-group:nth-of-type(3) {
-    margin-bottom: 0;
   }
 }
 /* Tablet */
@@ -236,14 +233,11 @@
             flex-direction: column;
     max-width: 18.75em;
     margin: 0;
-    height: 34.625em;
+    height: max-content;
   }
   #form .contact-right .info-group {
     margin-left: 0;
     width: 100%;
-  }
-  #form .contact-right .info-group:nth-of-type(3) {
-    margin-bottom: 2.25em;
   }
 }
 /* Large Desktop */
