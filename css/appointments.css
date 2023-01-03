@@ -74,6 +74,10 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  #appointments .schedule-wrapper {
+    position: relative;
+    z-index: 1;
+  }
   #appointments .loading-wrapper {
     position: absolute;
     text-align: center;
@@ -88,16 +92,12 @@
   #appointments .lds-ring.active {
     background-color: transparent;
   }
-  #appointments .script-wrapper {
-    position: relative;
-    z-index: 1;
-  }
   #appointments iframe {
     position: fixed;
-    top: 4em;
+    top: 5em;
     left: 0;
     right: 0;
-    height: calc(80vh) !important;
+    height: 75vh !important;
     min-height: 0 !important;
   }
 }

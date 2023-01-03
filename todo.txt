@@ -9,21 +9,24 @@ Before launch:
   make section titles white color with blue background
 
   hide reviews section until actual reviews are available
+  
+  ask if cleaning includes exams
 
-  add accessibility to nav menu 
+  ask which services they provide, then update services and appointments pages if it's different
+
 
 
 After launch: 
 
+  fix mobile navbar menu overflow landscape view
+  
+  update reviews to be actual reviews from their location
+  
+  remove dark mode
+  
   make button font sizes consistent
 
-  remove dark mode
-
   add cool background designs to home page, other pages? 
-
-  update reviews to be actual reviews from their location
-
-  fix mobile navbar menu overflow landscape view
 
   change services more info descriptions
 
