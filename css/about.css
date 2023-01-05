@@ -4,7 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #mission .content {
-    max-width: 60em;
+    max-width: 65em;
     margin: auto;
     text-align: center;
     padding: 3.125em 1.25em;
@@ -197,8 +197,10 @@
     width: 65%;
     text-align: left;
   }
-  #office a:hover, 
-  #office a:focus {
+  #office .office-name:hover,
+  #office .office-name:focus, 
+  #office .address:hover, 
+  #office .address:focus {
     text-decoration: underline;
   }
   #office .address img {

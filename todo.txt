@@ -1,18 +1,22 @@
 Before launch:
 
-  switch appointments scheduler to the business's email/name
-
-  change contact form submit email to business's email
-
-  see if they added their business to google when you search address. If so, update embedded maps to say Ideal Family Smiles instead of address
+  reword all descriptions to avoid plagiarism
+  
+  Add business to google
+  
+  Update embedded maps to say Ideal Family Smiles instead of address
 
   make section titles white color with blue background
 
   hide reviews section until actual reviews are available
   
-  ask if cleaning includes exams
+  Appointments page: 
+    ask if cleaning includes exams
+    ask which services they provide, then update services and appointments pages if it's different
+    ask if they want to include prices with the services
 
-  ask which services they provide, then update services and appointments pages if it's different
+
+
 
 
 

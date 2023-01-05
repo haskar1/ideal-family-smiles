@@ -573,12 +573,8 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #int-hero {
-    min-height: 18.75em;
+    min-height: 18em;
     height: auto;
-    padding-top: 11.25em;
-    -webkit-padding-after: 6.25em;
-            padding-block-end: 6.25em;
-    background-attachment: fixed;
     font-size: inherit;
   }
 }
