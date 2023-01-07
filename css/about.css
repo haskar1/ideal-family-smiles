@@ -1,49 +1,45 @@
 /*-- -------------------------- -->
 <---          Landing           -->
 <--- -------------------------- -*/
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #mission .content {
-    max-width: 65em;
-    margin: auto;
-    text-align: center;
-    padding: 3.125em 1.25em;
-    margin-bottom: 3.125em;
-  }
-  #mission .content p {
-    font-size: min(6vw, 1.75em);
-    line-height: 1.75em;
-  }
-  #mission .content p:first-of-type {
-    margin-bottom: 2em;
-  }
-}
-/* Inbetween */
-@media only screen and (min-width: 900px) {
   #int-hero {
-    margin-bottom: 3em;
+    margin-bottom: 5em;
   }
-  #mission .content {
+  #mission {
     margin-bottom: 8em;
   }
+  #mission .content {
+    max-width: 70em;
+    margin: auto;
+    text-align: center;
+  }
+  #mission p {
+    font-size: min(6vw, 1.6em);
+    line-height: 1.7em;
+    margin-bottom: 2em;
+  }
+  #mission p:last-of-type {
+    margin-bottom: 0;
+  }
 }
+
 
 /*-- -------------------------- -->
 <---          Staff             -->
 <--- -------------------------- -*/
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #staff {
-    margin-bottom: 4em;
-  }
-  #staff .title {
-    font-size: min(12vw, 3em);
-    text-align: center;
+    position: relative;
+    margin-bottom: 8em;
   }
   #staff .container {
     width: 90%;
     max-width: 65em;
-    padding-top: 5.5em;
+    margin-bottom: 8em;
   }
   #staff .content {
     margin: auto;
@@ -114,6 +110,7 @@
     object-fit: cover;
   }
 }
+
 /* Inbetween */
 @media only screen and (min-width: 900px) {
   #staff {
@@ -156,19 +153,13 @@
     box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
     border-radius: 10px;
   }
-  #office .title {
-    font-size: min(14vw, 3em);
-    margin-bottom: 1em;
-    text-align: center;
-    font-weight: 700;
-  }  
-  #office .content {
-    margin: auto;
-  }
-  #office h2 {
+  #office .container h2 {
     font-size: min(8vw, 2em);
     font-weight: 400;
     margin-bottom: 0.75em;
+  }
+  #office .content {
+    margin: auto;
   }
   #office .contact-info {
     margin: auto;
@@ -226,17 +217,17 @@
   #office .content.other-offices.hidden {
     display: none;
   }
-  #office .title.other-offices.hidden {
+  #office h2.other-offices.hidden {
     display: none;
   }
-  #office .title.other-offices {
+  #office h2.other-offices {
     display: inline-block;
     position: relative;
     font-size: min(10vw, 3em);
     margin-top: 0.5em;
     margin-bottom: 1.5em;
   }
-  #office .title.other-offices:after {
+  #office h2.other-offices:after {
     content: '';
     position: absolute;
     display: block;
@@ -341,7 +332,7 @@
     width: 100%;
     object-fit: cover;
   }
-  #cta .title {
+  #cta h2 {
     font-weight: 900;
     font-size: min(9vw, 3em);
     line-height: 1.20833333;

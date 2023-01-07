@@ -212,7 +212,7 @@
     width: 100%;
     object-fit: cover;
   }
-  #cta .title {
+  #cta h2 {
     font-weight: 900;
     font-size: min(9vw, 3em);
     line-height: 1.20833333;

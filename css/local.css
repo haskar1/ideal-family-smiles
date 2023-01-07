@@ -7,16 +7,12 @@
   #staff {
     margin-bottom: 8em;
   }
-  #staff .title {
-    font-size: min(12vw, 3em);
-    text-align: center;
-  }
   #staff .content {
-    padding-top: 6em;
+    margin-bottom: 8em;
     text-align: center;
   }
   #staff .content + .content {
-    padding-top: 8em;
+    margin-bottom: 0;
   }
   #staff .content .description {
     margin: auto;
@@ -92,12 +88,12 @@
             justify-content: space-evenly;
     max-width: 75em;
   }
+  #staff .content {
+    margin-bottom: 0;
+  }
   #staff .content .description {
     width: 80%;
     max-width: 35em;
-  }
-  #staff .content + .content {
-    padding-top: 6em;
   }
 }
 
@@ -121,20 +117,14 @@
     -webkit-box-shadow: 0px -7px 11px -1px rgba(0,0,0,0.2); 
     box-shadow: 0px -4px 10px 4px rgba(0,0,0,0.2);
     border-radius: 10px;
-  }
-  #office .title {
-    font-size: min(14vw, 3em);
-    margin-bottom: 1em;
-    text-align: center;
-    font-weight: 700;
-  }  
-  #office .content {
-    margin: auto;
-  }
-  #office h2 {
+  } 
+  #office .container h2 {
     font-size: min(8vw, 2em);
     font-weight: 400;
     margin-bottom: 0.75em;
+  }
+  #office .content {
+    margin: auto;
   }
   #office .contact-info {
     margin: auto;
@@ -192,17 +182,17 @@
   #office .content.other-offices.hidden {
     display: none;
   }
-  #office .title.other-offices.hidden {
+  #office h2.other-offices.hidden {
     display: none;
   }
-  #office .title.other-offices {
+  #office h2.other-offices {
     display: inline-block;
     position: relative;
     font-size: min(10vw, 3em);
     margin-top: 0.5em;
     margin-bottom: 1.5em;
   }
-  #office .title.other-offices:after {
+  #office h2.other-offices:after {
     content: '';
     position: absolute;
     display: block;
@@ -276,12 +266,6 @@
   #reviews {
     margin-bottom: 8em;
   }
-  #reviews .title {
-    font-size: min(14vw, 3em);
-    margin-bottom: 2em;
-    text-align: center;
-    font-weight: 700;
-  } 
   #reviews .container {
     width: 96%;
     max-width: 100em;
@@ -438,7 +422,7 @@
     width: 100%;
     object-fit: cover;
   }
-  #cta .title {
+  #cta h2 {
     font-weight: 900;
     font-size: min(9vw, 3em);
     line-height: 1.20833333;

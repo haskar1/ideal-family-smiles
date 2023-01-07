@@ -1,14 +1,10 @@
 Before launch:
-
-  reword all descriptions to avoid plagiarism
   
   Add business to google
   
   Update embedded maps to say Ideal Family Smiles instead of address
 
   make section titles white color with blue background
-
-  hide reviews section until actual reviews are available
   
   Appointments page: 
     ask if cleaning includes exams

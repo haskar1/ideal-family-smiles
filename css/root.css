@@ -6,12 +6,10 @@
 @media only screen and (min-width: 0em) {
   :root {
     --primary: #569fdecf;
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
+    --primary-dark: #00539B;
     --bodyText: #1a1a1a;
     --blue-btn: #0074b7;
     --blue-btn-hover: #005194;
-    /* --btn: #FFBA19; */
   }
   /* roboto-regular - latin */
   @font-face {
@@ -132,6 +130,73 @@
     position: absolute;
     white-space: nowrap; 
     width: 1px;
+  }
+  .title {
+    font-size: min(14vw, 3em);
+    padding: 2em 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .container.bg-blue-solid {
+    width: 100%;
+  }
+}
+
+/* Mobile - blue wavy background behind titles */
+@media only screen and (max-width: 640px) {
+  .fixed-bg-m {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100%; 
+    width: 100%;
+    padding: 6em 0 2em;
+  }
+  .bg-blue-m {
+    background-image: url("../images/landing-other-m.png");
+    background-image: -webkit-image-set(
+      url("../images/landing-other-m.webp") 1x,
+      url("../images/landing-other-m.png") 1x
+    );
+    background-image: image-set(
+      url("../images/landing-other-m.webp") 1x,
+      url("../images/landing-other-m.png") 1x
+    );
+  } 
+
+  /* Background for content underneath title */
+  .bg-blue-solid {
+    background-color: #003eb0;
+    background: linear-gradient(to bottom, #003eb0, #003eb0 80%, transparent);
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  /* Blue wavy background for full section, not the title */
+  .fixed-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%; 
+    width: 100%;
+  }
+  .bg-blue {
+    background-image: url("../images/landing-other.jpg");
+    background-image: -webkit-image-set(
+      url("../images/landing-other.webp") 1x,
+      url("../images/landing-other.jpg") 1x
+    );
+    background-image: image-set(
+      url("../images/landing-other.webp") 1x,
+      url("../images/landing-other.jpg") 1x
+    );
+  }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  .fixed-bg {
+    background-attachment: fixed;
   }
 }
 
@@ -508,6 +573,7 @@
     z-index: 1;
     min-height: 30vh;
     padding-top: 3.125em;
+    background-color: var(--primary);
   }
   #int-hero:before {
     content: '';
@@ -576,6 +642,9 @@
     min-height: 18em;
     height: auto;
     font-size: inherit;
+  }
+  #int-hero picture {
+    display: none;
   }
 }
 

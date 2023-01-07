@@ -62,7 +62,7 @@ if (viewMoreServicesBtn) {
 
 const viewMoreOfficesBtn = document.querySelector('#office .view-more-offices');
 const extendedOfficeList = document.querySelector('#office .content.hidden');
-const extendedOfficeListTitle = document.querySelector('#office .title.hidden');
+const extendedOfficeListTitle = document.querySelector('#office h2.hidden');
 
 if (viewMoreOfficesBtn) {
   viewMoreOfficesBtn.addEventListener('click', () => {
