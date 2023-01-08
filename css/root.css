@@ -131,79 +131,23 @@
     white-space: nowrap; 
     width: 1px;
   }
-  section {
-    margin-bottom: 2rem;
+  section:not(:first-of-type) {
+    margin-bottom: 8rem;
   }
   .title {
     font-size: min(14vw, 3em);
-    padding: 2em 0;
+    padding: 1rem 0;
     text-align: center;
     font-weight: 700;
+    margin: auto;
     margin-bottom: 2rem;
+    max-width: 50rem;
     color: #fff;
-    background: linear-gradient(to bottom, #fff, transparent 40%, transparent 60%, #fff), 
-                linear-gradient(to right, var(--primary), var(--primary-dark));
-  }
-  /* .container.bg-blue-solid {
-    width: 100%;
-  } */
-}
-
-/* Mobile - blue wavy background behind titles */
-/* @media only screen and (max-width: 640px) {
-  .fixed-bg-m {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 100%; 
-    width: 100%;
-    padding: 6em 0 2em;
-  }
-  .bg-blue-m {
-    background-image: url("../images/landing-other-m.png");
-    background-image: -webkit-image-set(
-      url("../images/landing-other-m.webp") 1x,
-      url("../images/landing-other-m.png") 1x
-    );
-    background-image: image-set(
-      url("../images/landing-other-m.webp") 1x,
-      url("../images/landing-other-m.png") 1x
-    );
-  }  */
-
-  /* Background for content below title */
-  /* .bg-blue-solid {
-    background-color: #003eb0;
-    background: linear-gradient(to bottom, #003eb0, #003eb0 80%, transparent);
-  }
-} */
-
-/* @media only screen and (min-width: 0px) {
-  .fixed-bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%; 
-    width: 100%;
-  }
-  .bg-blue {
-    background-image: url("../images/landing-other.jpg");
-    background-image: -webkit-image-set(
-      url("../images/landing-other.webp") 1x,
-      url("../images/landing-other.jpg") 1x
-    );
-    background-image: image-set(
-      url("../images/landing-other.webp") 1x,
-      url("../images/landing-other.jpg") 1x
-    );
+    background: linear-gradient(to bottom, #fff, transparent 50%, transparent 50%, #fff), 
+                linear-gradient(to right, transparent, var(--primary-dark) 30%, var(--primary-dark) 70%, transparent);
   }
 }
 
-@media only screen and (min-width: 64em) {
-  .fixed-bg {
-    background-attachment: fixed;
-  }
-} */
 
 /* Reset Margins */
 @media only screen and (min-width: 1025px) {
@@ -648,9 +592,6 @@
     height: auto;
     font-size: inherit;
   }
-  /* #int-hero picture {
-    display: none;
-  } */
 }
 
 
