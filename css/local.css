@@ -4,9 +4,12 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #staff {
-    margin-bottom: 8em;
+  /* #staff {
+    margin-bottom: 2em;
   }
+  #staff .title {
+    margin-bottom: 2rem;
+  } */
   #staff .content {
     margin-bottom: 8em;
     text-align: center;
@@ -74,11 +77,11 @@
   }
 }
 
-/* In-between */
+/* Small Desktop */
 @media only screen and (min-width: 64em) {
-  #staff {
+  /* #staff {
     margin-bottom: 10em;
-  }
+  } */
   #staff .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,9 +108,12 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #office {
+  /* #office {
     margin-bottom: 8em;
   }
+  #office .title {
+    margin-bottom: 2rem;
+  } */
   #office .container {
     text-align: center;
     width: 90%;
@@ -263,9 +269,9 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #reviews {
+  /* #reviews {
     margin-bottom: 8em;
-  }
+  } */
   #reviews .container {
     width: 96%;
     max-width: 100em;
@@ -390,6 +396,7 @@
   #cta {
     position: relative;
     padding: 3.125em 0;
+    margin-bottom: 0;
   }
   #cta:before {
     content: '';
@@ -455,10 +462,10 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  #cta {
+  /* #cta {
     position: relative;
     margin-top: 6.25em;
-  }
+  } */
   #cta:before {
     display: none;
   }

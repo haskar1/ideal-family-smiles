@@ -131,19 +131,26 @@
     white-space: nowrap; 
     width: 1px;
   }
+  section {
+    margin-bottom: 2rem;
+  }
   .title {
     font-size: min(14vw, 3em);
     padding: 2em 0;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 2rem;
+    color: #fff;
+    background: linear-gradient(to bottom, #fff, transparent 40%, transparent 60%, #fff), 
+                linear-gradient(to right, var(--primary), var(--primary-dark));
   }
-  .container.bg-blue-solid {
+  /* .container.bg-blue-solid {
     width: 100%;
-  }
+  } */
 }
 
 /* Mobile - blue wavy background behind titles */
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   .fixed-bg-m {
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,17 +169,16 @@
       url("../images/landing-other-m.webp") 1x,
       url("../images/landing-other-m.png") 1x
     );
-  } 
+  }  */
 
-  /* Background for content underneath title */
-  .bg-blue-solid {
+  /* Background for content below title */
+  /* .bg-blue-solid {
     background-color: #003eb0;
     background: linear-gradient(to bottom, #003eb0, #003eb0 80%, transparent);
   }
-}
+} */
 
-@media only screen and (min-width: 641px) {
-  /* Blue wavy background for full section, not the title */
+/* @media only screen and (min-width: 0px) {
   .fixed-bg {
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,12 +199,11 @@
   }
 }
 
-/* Small Desktop */
 @media only screen and (min-width: 64em) {
   .fixed-bg {
     background-attachment: fixed;
   }
-}
+} */
 
 /* Reset Margins */
 @media only screen and (min-width: 1025px) {
@@ -643,9 +648,9 @@
     height: auto;
     font-size: inherit;
   }
-  #int-hero picture {
+  /* #int-hero picture {
     display: none;
-  }
+  } */
 }
 
 

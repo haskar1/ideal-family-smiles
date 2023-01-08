@@ -183,7 +183,7 @@
 @media only screen and (min-width: 0em) {
   #mission {
     padding-top: 3.125em;
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
   }
   #mission .content {
     max-width: 60em;
@@ -217,20 +217,22 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #services {
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     position: relative;
   }
-  #services .bg-blue-solid {
+  /* #services .bg-blue-solid {
     padding-bottom: 10em;
-  }
+  } */
   #services .title {
-    color: #fff;
+    /* color: #fff; */
+    /* color: #000; */
   }
   #services .card {
+    width: 90%;
     max-width: 25em;
-    margin: 0 auto 4em;
+    margin: 0 auto 3em;
     text-align: center;
-    background-color: rgba(255, 255, 255);
+    /* background-color: rgba(255, 255, 255); */
     padding: 1em;
     border-radius: 1em;
   }
@@ -298,9 +300,6 @@
 
 /* In-between */
 @media only screen and (min-width: 51em) {
-  #services {
-    margin-bottom: 10em;
-  }
   #services .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -327,7 +326,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   #services .card {
-    margin: 0 1.5em 4em;
     max-width: none;
   }
   #services .card:last-of-type {

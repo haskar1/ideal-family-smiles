@@ -4,7 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #form {
-    padding: 3.125em 0;
+    padding: 0;
     margin: auto;
     position: relative;
     padding-bottom: 10%;
@@ -213,7 +213,7 @@
         align-content: flex-start;
     font-size: 1.5vw;
     width: 100%;
-    padding: 9.375em 0;
+    padding: 3rem 0;
   }
   #form .left-section {
     width: 46.875em;

@@ -4,12 +4,12 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #int-hero {
+  /* #int-hero {
     margin-bottom: 5em;
   }
   #mission {
     margin-bottom: 8em;
-  }
+  } */
   #mission .content {
     max-width: 70em;
     margin: auto;
@@ -34,12 +34,14 @@
 @media only screen and (min-width: 0em) {
   #staff {
     position: relative;
-    margin-bottom: 8em;
+    /* margin-bottom: 8em; */
   }
   #staff .container {
     width: 90%;
     max-width: 65em;
-    margin-bottom: 8em;
+  }
+  #staff .container:not(:last-of-type) {
+    margin-bottom: 8rem;
   }
   #staff .content {
     margin: auto;
@@ -113,9 +115,9 @@
 
 /* Inbetween */
 @media only screen and (min-width: 900px) {
-  #staff {
+  /* #staff {
     margin-bottom: 8em;
-  }
+  } */
   #staff .content {
     margin-top: 0;
   }
@@ -140,9 +142,9 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #office {
+  /* #office {
     margin-bottom: 8em;
-  }
+  } */
   #office .container {
     text-align: center;
     width: 90%;
@@ -300,6 +302,7 @@
   #cta {
     position: relative;
     padding: 3.125em 0;
+    margin-bottom: 0;
   }
   #cta:before {
     content: '';
@@ -365,7 +368,7 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: 6.25em;
+    /* margin-top: 6.25em; */
   }
   #cta:before {
     display: none;
@@ -397,11 +400,5 @@
     top: 0;
     left: 0;
     z-index: 1;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
   }
 }
