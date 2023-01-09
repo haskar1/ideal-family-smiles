@@ -261,7 +261,6 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: 6.25em;
   }
   #cta:before {
     display: none;
@@ -294,11 +293,5 @@
     top: 0;
     left: 0;
     z-index: 1;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
   }
 }

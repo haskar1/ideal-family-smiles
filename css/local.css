@@ -4,12 +4,9 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  /* #staff {
-    margin-bottom: 2em;
-  }
   #staff .title {
-    margin-bottom: 2rem;
-  } */
+    margin-bottom: 4rem;
+  }
   #staff .content {
     margin-bottom: 8em;
     text-align: center;
@@ -79,9 +76,6 @@
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-  /* #staff {
-    margin-bottom: 10em;
-  } */
   #staff .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,12 +102,6 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  /* #office {
-    margin-bottom: 8em;
-  }
-  #office .title {
-    margin-bottom: 2rem;
-  } */
   #office .container {
     text-align: center;
     width: 90%;
@@ -125,7 +113,7 @@
     border-radius: 10px;
   } 
   #office .container h2 {
-    font-size: min(8vw, 2em);
+    font-size: min(7vw, 2em);
     font-weight: 400;
     margin-bottom: 0.75em;
   }
@@ -135,7 +123,14 @@
   #office .contact-info {
     margin: auto;
     margin-bottom: 4em;
+    width: 90%;
     max-width: 23.1875em;
+    padding: 0.5rem;
+    border-radius: 1em;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
+       -moz-box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
   }
   #office .contact-info a {
     text-decoration: none;
@@ -147,9 +142,13 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    font-size: min(5vw, 1.25rem);
-    margin-bottom: 0.75em;
     padding: 0.15em 0.5em;
+  }
+  #office .contact-info p {
+    font-size: min(5vw, 1.25rem);
+  }
+  #office .contact-info span {
+    white-space: nowrap;
   }
   #office .contact-info .flex > *:first-child {
     width: 30%;
@@ -184,6 +183,10 @@
   }
   #office .button-solid.hidden {
     display: none;
+  }
+  #office .contact-info.other-offices {
+    padding: 1em;
+    white-space: nowrap;
   }
   #office .content.other-offices.hidden {
     display: none;
@@ -269,9 +272,6 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  /* #reviews {
-    margin-bottom: 8em;
-  } */
   #reviews .container {
     width: 96%;
     max-width: 100em;
@@ -462,10 +462,6 @@
 
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  /* #cta {
-    position: relative;
-    margin-top: 6.25em;
-  } */
   #cta:before {
     display: none;
   }

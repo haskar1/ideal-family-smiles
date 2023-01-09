@@ -7,10 +7,6 @@
    #int-hero {
     margin-bottom: 5em;
   }
-  /*
-  #mission {
-    margin-bottom: 8em;
-  } */
   #mission .content {
     max-width: 70em;
     margin: auto;
@@ -35,7 +31,9 @@
 @media only screen and (min-width: 0em) {
   #staff {
     position: relative;
-    /* margin-bottom: 8em; */
+  }
+  #staff .title {
+    margin-bottom: 4rem;
   }
   #staff .container {
     width: 90%;
@@ -116,9 +114,6 @@
 
 /* Inbetween */
 @media only screen and (min-width: 900px) {
-  /* #staff {
-    margin-bottom: 8em;
-  } */
   #staff .content {
     margin-top: 0;
   }
@@ -143,9 +138,6 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  /* #office {
-    margin-bottom: 8em;
-  } */
   #office .container {
     text-align: center;
     width: 90%;
@@ -369,7 +361,6 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    /* margin-top: 6.25em; */
   }
   #cta:before {
     display: none;

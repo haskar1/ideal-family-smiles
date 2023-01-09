@@ -180,6 +180,7 @@
   #cta {
     position: relative;
     padding: 3.125em 0;
+    margin-bottom: 0;
   }
   #cta:before {
     content: '';

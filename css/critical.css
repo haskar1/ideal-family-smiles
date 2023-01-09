@@ -217,30 +217,31 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #services {
-    /* margin-bottom: 2em; */
     position: relative;
-  }
-  /* #services .bg-blue-solid {
-    padding-bottom: 10em;
-  } */
-  #services .title {
-    /* color: #fff; */
-    /* color: #000; */
   }
   #services .card {
     width: 90%;
     max-width: 25em;
     margin: 0 auto 3em;
     text-align: center;
-    /* background-color: rgba(255, 255, 255); */
     padding: 1em;
     border-radius: 1em;
   }
-  #services .view-more-services, 
-  #services .view-all-services {
-    background-color: transparent;
+  #services .card:not(.view-more-services, .view-all-services) {
+    -webkit-box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
+       -moz-box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
+  }
+  #services card.view-more-services, 
+  #services card.view-all-services {
     padding: 0;
-    margin: 0 auto;
+    width: max-content;
+    white-space: nowrap;
+  }
+  #services .button-solid {
+    color: var(--blue-btn);
+    background-color: #fff;
+    border: 0.2em solid var(--blue-btn);
   }
   #services .card picture {
     background: var(--primary);
@@ -277,11 +278,6 @@
     width: 90%;
     margin: auto;
     color: #000;
-  }
-  #services .button-solid {
-    color: var(--blue-btn);
-    background-color: #fff;
-    border: 0.2em solid var(--blue-btn);
   }
   #services .button-solid:hover, 
   #services .button-solid:focus {
