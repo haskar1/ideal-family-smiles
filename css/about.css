@@ -32,9 +32,6 @@
   #staff {
     position: relative;
   }
-  #staff .title {
-    margin-bottom: 4rem;
-  }
   #staff .container {
     width: 90%;
     max-width: 65em;
