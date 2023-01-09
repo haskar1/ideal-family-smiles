@@ -143,10 +143,18 @@
     margin-bottom: 2rem;
     width: max-content;
     color: #fff;
-    background: linear-gradient(to bottom, #fff, transparent 90%, transparent 90%, #fff), 
-                linear-gradient(to bottom right, #fff, transparent 50%), 
-                linear-gradient(to bottom left, #fff, transparent 50%), 
-                linear-gradient(to right, transparent, var(--primary-dark) 30%, var(--primary-dark) 70%, transparent);
+    background: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgba(255,255,255, 0) 90%, rgba(255,255,255, 0) 90%, rgb(255, 255, 255)), 
+                -webkit-linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255,255,255, 0) 50%), 
+                -webkit-linear-gradient(to bottom left, rgb(255, 255, 255), rgba(255,255,255, 0) 50%), 
+                -webkit-linear-gradient(to right, rgba(255,255,255, 0), var(--primary-dark) 30%, var(--primary-dark) 70%, rgba(255,255,255, 0));
+       background: -moz-linear-gradient(to bottom, rgb(255, 255, 255), rgba(255,255,255, 0) 90%, rgba(255,255,255, 0) 90%, rgb(255, 255, 255)), 
+                   -moz-linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255,255,255, 0) 50%), 
+                   -moz-linear-gradient(to bottom left, rgb(255, 255, 255), rgba(255,255,255, 0) 50%), 
+                   -moz-linear-gradient(to right, rgba(255,255,255, 0), var(--primary-dark) 30%, var(--primary-dark) 70%, rgba(255,255,255, 0));
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255,255,255, 0) 90%, rgba(255,255,255, 0) 90%, rgb(255, 255, 255)), 
+                        linear-gradient(to bottom right, rgb(255, 255, 255), rgba(255,255,255, 0) 50%), 
+                        linear-gradient(to bottom left, rgb(255, 255, 255), rgba(255,255,255, 0) 50%), 
+                        linear-gradient(to right, rgba(255,255,255, 0), var(--primary-dark) 30%, var(--primary-dark) 70%, rgba(255,255,255, 0));
   }
 }
 

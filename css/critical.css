@@ -158,8 +158,12 @@
     padding-top: 8em;
   }
   #hero:before {
-    background: linear-gradient(to bottom, #1d7fd5, #1d7fd5 10%, transparent 30%, transparent 80%, #1d7fd5 90%),
-                linear-gradient(to right, #1d7fd5, #1d7fd5 60%, transparent 85%);
+    background: -webkit-linear-gradient(to bottom, #1d7fd5, #1d7fd5 10%, rgba(255,255,255, 0) 30%, rgba(255,255,255, 0) 80%, #1d7fd5 90%),
+                -webkit-linear-gradient(to right, #1d7fd5, #1d7fd5 60%, rgba(255,255,255, 0) 85%);
+       background: -moz-linear-gradient(to bottom, #1d7fd5, #1d7fd5 10%, rgba(255,255,255, 0) 30%, rgba(255,255,255, 0) 80%, #1d7fd5 90%),
+                   -moz-linear-gradient(to right, #1d7fd5, #1d7fd5 60%, rgba(255,255,255, 0) 85%);
+            background: linear-gradient(to bottom, #1d7fd5, #1d7fd5 10%, rgba(255,255,255, 0) 30%, rgba(255,255,255, 0) 80%, #1d7fd5 90%),
+                        linear-gradient(to right, #1d7fd5, #1d7fd5 60%, rgba(255,255,255, 0) 85%);
   }
   #hero .hero-content {
     width: 80%;
@@ -168,7 +172,7 @@
   }
   #hero .hero-text {
     width: max-content;
-    background: linear-gradient(to bottom, rgba(2, 0, 134, 0.45), transparent);
+    background: linear-gradient(to bottom, rgba(2, 0, 134, 0.45), rgba(255,255,255, 0));
     padding: 2em;
     border-radius: 5px;
   }

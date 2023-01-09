@@ -3,15 +3,11 @@ Before launch:
   Add business to google
   
   Update embedded maps to say Ideal Family Smiles instead of address
-
-  make section titles white color with blue background
   
   Appointments page: 
     ask if cleaning includes exams
     ask which services they provide, then update services and appointments pages if it's different
     ask if they want to include prices with the services
-
-
 
 
 
