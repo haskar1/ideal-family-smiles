@@ -124,6 +124,7 @@
     opacity: .9;
     text-decoration: none;
     display: block;
+    margin-bottom: 0;
   }
 }
 /* Mobile Landscape */
