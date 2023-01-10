@@ -125,9 +125,9 @@
     padding: 0.5rem;
     border-radius: 1em;
     background-color: whitesmoke;
-    -webkit-box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
-       -moz-box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 25px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 25px -7px var(--primary-dark);
+       -moz-box-shadow: 0px 0px 25px -7px var(--primary-dark);
+            box-shadow: 0px 0px 25px -7px var(--primary-dark);
   }
   #office .contact-info a {
     text-decoration: none;
