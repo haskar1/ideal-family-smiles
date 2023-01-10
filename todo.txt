@@ -17,9 +17,7 @@ After launch:
   fix mobile navbar menu overflow landscape view
   
   update reviews to be actual reviews from their location
-  
-  remove dark mode
-  
+    
   make button font sizes consistent
 
   add cool background designs to home page, other pages? 
