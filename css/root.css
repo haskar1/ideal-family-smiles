@@ -325,11 +325,6 @@
     list-style: none;
     margin-bottom: 1.5em;
     text-align: center;
-    opacity: 0;
-    -webkit-transition: opacity .5s;
-            transition: opacity .5s;
-            transition: opacity .5s;
-            transition: opacity .5s;
   }
   #navigation #navbar-menu ul li a {
     text-decoration: none;
@@ -358,9 +353,6 @@
     height: 19.125em;
     padding-top: 1.25em;
     z-index: -100;
-  }
-  #navigation #navbar-menu.open ul li {
-    opacity: 1;
   }
 }
 
