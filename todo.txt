@@ -1,5 +1,5 @@
-Before launch:
-  
+High Priority: 
+
   Add business to google
   
   Update embedded maps to say Ideal Family Smiles instead of address
@@ -7,16 +7,12 @@ Before launch:
 
 
 
-After launch: 
+Low Priority: 
 
   fix mobile navbar menu overflow landscape view
   
-  update reviews to be actual reviews from their location
+  add reviews to website
     
   make button font sizes consistent
-
-  add cool background designs to home page, other pages? 
-
-  change services more info descriptions
 
   change button loading circle to be async?
