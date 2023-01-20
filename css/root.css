@@ -728,7 +728,7 @@
     font-size: 0.8em;
     color: #fff;
   }
-  #footer .credit .copyright span {
+  #footer .credit .copyright > * {
     white-space: nowrap;
   }
 }
@@ -785,8 +785,5 @@
   }
   #footer .credit {
     margin-top: 15.25em;
-  }
-  #footer .credit .copyright {
-    display: inline-block;
   }
 }
