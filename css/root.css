@@ -354,7 +354,7 @@
   }
   #navigation #navbar-menu.open {
     height: 19.75em;
-    max-height: calc(100vh - 5.0625em);
+    max-height: calc(100vh - 7rem);
     padding-top: 1.25em;
     z-index: -100;
     overflow: scroll;
