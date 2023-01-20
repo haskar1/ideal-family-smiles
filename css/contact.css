@@ -1,4 +1,15 @@
 /*-- -------------------------- -->
+<---         Landing            -->
+<--- -------------------------- -*/
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #int-hero {
+    margin-bottom: 4rem;
+  }
+}
+
+
+/*-- -------------------------- -->
 <---           Form             -->
 <--- -------------------------- -*/
 /* Mobile */
@@ -53,7 +64,7 @@
   }
   #form #contact .input-group label {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.25rem;
     margin-bottom: 0.375em;
   }
   #form #contact .input-group input[type="text"],
