@@ -350,9 +350,13 @@
     z-index: -1;
   }
   #navigation #navbar-menu.open {
-    height: 19.125em;
+    height: 19.75em;
+    max-height: calc(100vh - 5.0625em);
     padding-top: 1.25em;
     z-index: -100;
+    overflow: scroll;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 28px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 28px 24px;
   }
 }
 
