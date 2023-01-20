@@ -4,7 +4,7 @@
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
-   #int-hero {
+  #int-hero {
     margin-bottom: 5em;
   }
   #mission .content {
