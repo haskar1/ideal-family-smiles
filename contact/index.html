@@ -54,40 +54,48 @@
 
     <div id="navigation">
         <div aria-hidden="true" class="background-color-div">
-            <!--This div is used to overcome a z-index issue where the open
-                #navbar-menu is on top of the #navigation. This bar places itself 
-                the #navbar-menu so that menu appears behind the #navigation
+            <!--This div is used to overcome a z-index issue where the open #navbar-menu 
+                is on top of the #navigation in mobile. This bar places itself on top of the
+                #navbar-menu but under the navigation so that menu appears behind the #navigation
             -->
         </div>
-        <div class="container">
-            <a draggable="false" class="logo" aria-label="click to go to home page" href="../">
-                <img draggable="false" oncontextmenu="return false;" aria-hidden="true" src="../images/logo.png" decoding="async" alt="Logo of a smiling tooth cartoon sitting above our company name" width="623" height="321">
-            </a>
 
-            <a draggable="false" class="phone" href="tel:703-570-4800">
-                <img draggable="false" oncontextmenu="return false;" src="../images/phone-symbol.svg" alt="phone symbol">
-            </a>
+        <div class="navigation__top">
+            <div class="content">
+                <a draggable="false" class="phone-with-text" href="tel:703-570-4800">(703) 570-4800</a>
+                <a draggable="false" class="address" href="https://goo.gl/maps/zGCPGwX8ixE2XvPC6" target="_blank" rel="noopener noreferrer">8622 Lee Hwy, Unit D, Fairfax, VA 22031</a>
+            </div>
+        </div>
 
-            <!--Main Nav-->
-            <nav>
-                
-                <!--Mobile Nav toggle-->
-                <button class="hamburger-menu" aria-controls="navbar-menu" aria-expanded="false">
-                    <span class="hamburger" aria-hidden="true"></span>
-                    <div class="visually-hidden">Menu</div>
-                </button>
+        <div class="navigation__bottom">
+            <div class="content">
+                <a draggable="false" class="logo" aria-label="click to go to home page" href="../">
+                    <img draggable="false" oncontextmenu="return false;" aria-hidden="true" src="../images/logo.png" decoding="async" alt="Logo of a smiling tooth cartoon sitting above our company name" width="623" height="321">
+                </a>
 
-                <div id="navbar-menu">
-                    <ul>
-                        <li><a draggable="false" href="../">Home</a></li>
-                        <li><a draggable="false" href="../about/">About Us</a></li>
-                        <li><a draggable="false" href="../services/">Services</a></li>
-                        <li><a draggable="false" href="../appointments/">Appointments</a></li>
-                        <li><a draggable="false" class="active" href="./">Contact</a></li>
-                    </ul>
-                </div>
+                <a draggable="false" class="phone" href="tel:703-570-4800">
+                    <img draggable="false" oncontextmenu="return false;" src="../images/phone-symbol.svg" alt="phone symbol">
+                </a>
 
-            </nav>
+                <!--Main Nav-->
+                <nav>
+                    <!--Mobile Nav toggle-->
+                    <button class="hamburger-menu" aria-controls="navbar-menu" aria-expanded="false">
+                        <span class="hamburger" aria-hidden="true"></span>
+                        <div class="visually-hidden">Menu</div>
+                    </button>
+                    
+                    <div id="navbar-menu">
+                        <ul>
+                            <li><a draggable="false" href="../">Home</a></li>
+                            <li><a draggable="false" href="../about/">About Us</a></li>
+                            <li><a draggable="false" href="../services/">Services</a></li>
+                            <li><a draggable="false" href="../appointments/">Appointments</a></li>
+                            <li><a draggable="false" class="active" href="./">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
 
