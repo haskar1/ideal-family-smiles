@@ -362,6 +362,15 @@
     overflow: scroll;
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 28px 24px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 28px 24px;
+
+    /* Bottom fade when menu overflows to let people know there's more content */
+    background-image: linear-gradient(to bottom, white, white),
+                      linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+    background-position: bottom center, bottom center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 30px, 100% 30px ;
+    background-attachment: local, scroll;
   }
   #navigation .navigation__top {
     display: none;
