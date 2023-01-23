@@ -108,6 +108,7 @@
     background: #1a1a1a;
     padding: 2.8125em 2.125em;
     width: 100%;
+    min-width: min-content;
     max-width: 18.75em;
     margin: auto;
     border-radius: 1em;

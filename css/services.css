@@ -28,7 +28,6 @@
     cursor : pointer;
     color : white;
     font-size : min(5vw, 1.3em);
-    white-space: nowrap;
   }
   
   #services span::after {
@@ -53,17 +52,22 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    min-height: max-content;
     max-height: 0px;
-    padding: 0 1.5em;
+    padding: 0;
     overflow: hidden;
     text-align: center;
     transition: all 0.4s ease;
   }
 
   #services .span-wrapper[clicked] + .slide {
-    max-height: 400px;
+    overflow-x: auto;
+    max-height: 25em;
     padding-top: 2.5em;
+  }
+
+  #services .slide :is(p, a) {
+    line-height: normal;
   }
 
   #services .slide p .more-info {
@@ -78,7 +82,6 @@
     justify-content: center;
     align-items: center;
     margin: 2em auto;
-    line-height: normal;
     font-size: min(4.6vw, 1em);
     background-color: white;
     color: var(--blue-btn);
