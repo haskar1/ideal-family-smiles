@@ -1,16 +1,18 @@
 High Priority: 
 
+  Change google search image
+  
   Add business to google
   
   Update embedded maps to say Ideal Family Smiles instead of address
 
-
+  Add accessibility to all elements
 
 
 Low Priority: 
 
-  fix mobile navbar menu overflow landscape view
-  
+  remove em/rem from all line heights 
+    
   add reviews to website
     
   make button font sizes consistent
