@@ -52,16 +52,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: max-content;
     max-height: 0px;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     text-align: center;
     transition: all 0.4s ease;
   }
 
   #services .span-wrapper[clicked] + .slide {
     overflow-x: auto;
+    overflow-y: auto;
+    min-height: max-content;
     max-height: 25em;
     padding-top: 2.5em;
   }

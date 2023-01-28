@@ -9,16 +9,21 @@ const serviceRequestAppointmentBtns = document.querySelectorAll('#services ul li
 [...serviceTitles].forEach(serviceTitle => {
   serviceTitle.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
-      addClickedAttribute(e);
+      toggleClickedAttribute(e);
       collapseOtherServices(e);
       makeChildrenTabbable(e);
     }
   })
 });
 
-function addClickedAttribute(e) {
+function toggleClickedAttribute(e) {
   // .span-wrapper element
-  e.currentTarget.parentElement.toggleAttribute('clicked');
+  if (e.currentTarget.parentElement.hasAttribute('clicked')) {
+    e.currentTarget.parentElement.removeAttribute('clicked');
+  }
+  else {
+    e.currentTarget.parentElement.setAttribute('clicked', '');
+  }
 }
 
 function collapseOtherServices(e) {
@@ -76,14 +81,14 @@ function handleViewportChange(e) {
 
 function addClickEventListeners() {
   [...serviceTitles].forEach(serviceTitle => {
-    serviceTitle.addEventListener('click', addClickedAttribute);
+    serviceTitle.addEventListener('click', toggleClickedAttribute);
     serviceTitle.addEventListener('click', collapseOtherServices);
   });
 }
 
 function removeClickEventListeners() {
   [...serviceTitles].forEach(serviceTitle => {
-    serviceTitle.removeEventListener('click', addClickedAttribute);
+    serviceTitle.removeEventListener('click', toggleClickedAttribute);
     serviceTitle.removeEventListener('click', collapseOtherServices);
   });
 }
@@ -138,8 +143,16 @@ function removeFocusOutEventListeners() {
   });
 }
 
+
 // Register event listener
-mediaQuery.addEventListener('change', handleViewportChange)
+try {
+  mediaQuery.addEventListener('change', handleViewportChange);
+} 
+catch (e) {
+  // Fallback for Safari < 14 and older browsers
+  mediaQuery.addListener(handleViewportChange);
+}
+
 
 // Initial check
 handleViewportChange(mediaQuery)
