@@ -127,7 +127,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #hero {
-    padding-top: 13em;
+    padding-top: 15em;
   }
   #hero:before {
     background: -webkit-linear-gradient(to bottom, #1d7fd5, #1d7fd5 10%, rgba(255,255,255, 0) 30%, rgba(255,255,255, 0) 80%, #1d7fd5 90%),
