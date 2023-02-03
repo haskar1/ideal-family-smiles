@@ -157,7 +157,7 @@
     margin: auto;
     margin-bottom: 4em;
     width: 90%;
-    max-width: 23.1875em;
+    max-width: 27em;
     padding: 0.5rem;
     border-radius: 1em;
     background-color: whitesmoke;
@@ -184,11 +184,11 @@
     white-space: nowrap;
   }
   #office .contact-info .flex > :first-child {
-    width: 30%;
+    width: 40%;
     font-weight: 700;
   }
   #office .contact-info .flex > :last-child {
-    width: 65%;
+    width: 55%;
     text-align: left;
   }
   #office .office-name:hover,
@@ -225,6 +225,13 @@
   #office .contact-info.other-offices {
     padding: 1em;
     white-space: nowrap;
+    max-width: 24em;
+  }
+  #office .contact-info.other-offices .flex > :first-child {
+    width: 30%;
+  }
+  #office .contact-info.other-offices .flex > :last-child {
+    width: 65%;
   }
   #office .content.other-offices.hidden {
     display: none;
