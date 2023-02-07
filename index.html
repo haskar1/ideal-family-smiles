@@ -9,15 +9,21 @@
 
     <meta name="description" content="We provide many services such as cleanings, x-rays, fillings, crowns, root canals, implants, extractions, Invisalign®, dentures, and more!">
 
-    <!--Google Search Thumbnail-->
-    <PageMap>
-        <DataObject type="thumbnail">
-            <Attribute name="src" value="https://idealfamilysmilesva.com/images/social.jpg"/>
-            <Attribute name="width" value="1707"/>
-            <Attribute name="height" value="1314"/>
-        </DataObject>
-    </PageMap>
-
+    <!-- Google Search Thumbnail - Schema.org markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "Ideal Family Smiles",
+            "description": "Dentist in Fairfax, VA",
+            "slogan": "Take your smile to the next level with quality care!",
+            "telephone": "(703) 570-4800",
+            "url": "https://idealfamilysmilesva.com", 
+            "logo": "https://idealfamilysmilesva.com/images/social.jpg"
+        }
+    </script>
+    
+    
     <!--Social Media Display-->
     <meta property="og:title" content="Dentist in Fairfax, VA: Ideal Family Smiles"/>
     <meta property="og:description" content="We provide many services such as cleanings, x-rays, fillings, crowns, root canals, implants, extractions, Invisalign®, dentures, and more!"/>
@@ -141,7 +147,7 @@
             </div>
             <picture>
                 <source srcset="./images/landing-home.webp" type="image/webp">
-                <img draggable="false" oncontextmenu="return false;" aria-hidden="true" src="./images/landing-home.jpg" alt="toothbrush">
+                <img draggable="false" oncontextmenu="return false;" aria-hidden="true" src="./images/landing-home.jpg">
             </picture>
         </section>
 
