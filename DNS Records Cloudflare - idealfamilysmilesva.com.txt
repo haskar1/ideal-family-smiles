@@ -1,0 +1,46 @@
+;;
+;; Domain:     idealfamilysmilesva.com.
+;; Exported:   2023-02-20 04:16:29
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+idealfamilysmilesva.com	3600	IN	SOA	jake.ns.cloudflare.com dns.cloudflare.com 2042853318 10000 2400 604800 3600
+
+;; NS Records
+idealfamilysmilesva.com.	86400	IN	NS	jake.ns.cloudflare.com.
+idealfamilysmilesva.com.	86400	IN	NS	pola.ns.cloudflare.com.
+
+;; CNAME Records
+fairfax.idealfamilysmilesva.com.	1	IN	CNAME	secure.pageserve.co.
+idealfamilysmilesva.com.	1	IN	CNAME	ideal-family-smiles.pages.dev.
+www.idealfamilysmilesva.com.	1	IN	CNAME	idealfamilysmilesva.com.
+
+;; MX Records
+idealfamilysmilesva.com.	1	IN	MX	25 route3.mx.cloudflare.net.
+idealfamilysmilesva.com.	1	IN	MX	73 route2.mx.cloudflare.net.
+idealfamilysmilesva.com.	1	IN	MX	74 route1.mx.cloudflare.net.
+
+;; TXT Records
+idealfamilysmilesva.com.	3600	IN	TXT	"google-site-verification=jHc9xFhaSxUgNiKOC4Lz-2AnGcOcHoZOyTyzuDI74gQ"
+idealfamilysmilesva.com.	3600	IN	TXT	"google-site-verification=IlpyDdBCCoc9hdNrZaYonzeIoeuapERBYG9J9LwnlZY"
+idealfamilysmilesva.com.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
